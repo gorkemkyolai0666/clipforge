@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 60% 10%;
+    --foreground: 221 86% 92%;
+    --card: 195 49% 15%;
+    --card-foreground: 221 86% 92%;
+    --primary: 11 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 39 100% 56%;
+    --secondary-foreground: 216 60% 10%;
+    --muted: 195 49% 15%;
+    --muted-foreground: 10 41% 80%;
+    --accent: 39 100% 56%;
+    --accent-foreground: 216 60% 10%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 58% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 39 100% 56%;
+    --warning-foreground: 216 60% 10%;
+    --border: 200 20% 22%;
+    --input: 195 49% 15%;
+    --ring: 11 100% 65%;
+    --radius: 0.75rem;
+  }
+
+  .light {
+    --background: 240 20% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --primary: 11 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 39 100% 56%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 20% 96%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 39 100% 56%;
+    --accent-foreground: 0 0% 100%;
+    --border: 240 20% 90%;
+    --input: 0 0% 100%;
+    --ring: 11 100% 65%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-body), 'Sora', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-body), 'Sora', system-ui, sans-serif;
+  }
+  .font-mono {
+    font-family: var(--font-mono), 'Jetbrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply rounded-xl border border-white/10 shadow-brand-glow backdrop-blur-md;
+    background: rgba(19, 47, 56, 0.72);
+  }
+  .surface-card {
+    @apply glass-card transition-all duration-200 ease-in-out;
+  }
+  .forge-hero {
+    @apply relative overflow-hidden bg-background;
+    background-image:
+      radial-gradient(ellipse at 20% 30%, rgba(255, 107, 74, 0.18) 0%, transparent 52%),
+      radial-gradient(ellipse at 80% 70%, rgba(255, 176, 32, 0.12) 0%, transparent 48%);
+  }
+  .doc-page {
+    @apply mx-auto max-w-3xl rounded-xl border border-border bg-card p-10 shadow-brand-glow;
+  }
+  .conflict-inbox-card {
+    @apply glass-card border-l-4 border-l-primary p-6;
+  }
+  .input-field {
+    @apply flex h-10 w-full rounded-lg border border-border bg-input px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/30;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-brand-glow transition-all duration-200 hover:opacity-90;
+  }
+  .surface-card-accent {
+    @apply surface-card border-primary/40 ring-2 ring-primary/20;
+  }
+}
+/* === STITCH HTML STYLES (auto-generated) === */
+/* Stitch inline styles extracted from htmlCode */
+/* ClipForge Settings & Team */
+.glass-panel {
+            background: rgba(3, 14, 32, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ffb4a3, #ff6b4a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background-color: #ff6b4a;
+            color: #ffffff;
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff856b;
+        }
+
+/* ClipForge Workspace */
+body { background-color: #0A1628; }
+        .glass-panel {
+            background-color: rgba(19, 47, 56, 0.4);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-primary { background-color: #FF6B4A; color: white; transition: background-color 0.2s; }
+        .btn-primary:hover { background-color: #ff856a; }
+        .badge-critical { background-color: #FF6B4A; color: white; }
+        .badge-warning { background-color: #ea9f00; color: #030e20; }
+        
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+.stitch-screen {
+  min-height: 100vh;
+  width: 100%;
+}
+.stitch-screen img {
+  max-width: 100%;
+  height: auto;
+}
+/* === END STITCH HTML STYLES === */

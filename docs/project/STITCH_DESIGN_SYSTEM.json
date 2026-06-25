@@ -1,0 +1,1063 @@
+{
+  "projectId": "12970066380241966656",
+  "createProject": {
+    "id": 2,
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "text": "{\"name\":\"projects/12970066380241966656\",\"title\":\"ClipForge - Async Video Intelligence Platformu\",\"visibility\":\"PRIVATE\",\"projectType\":\"PROJECT_DESIGN\",\"origin\":\"STITCH\"}",
+          "type": "text"
+        }
+      ],
+      "structuredContent": {
+        "name": "projects/12970066380241966656",
+        "origin": "STITCH",
+        "projectType": "PROJECT_DESIGN",
+        "title": "ClipForge - Async Video Intelligence Platformu",
+        "visibility": "PRIVATE"
+      }
+    }
+  },
+  "generateScreen": {
+    "id": 3,
+    "jsonrpc": "2.0",
+    "result": {
+      "content": [
+        {
+          "text": "{\"projectId\":\"12970066380241966656\",\"sessionId\":\"102506233051428393\",\"outputComponents\":[{\"designSystem\":{\"name\":\"assets/e4da7143410d473883bf445fb24e99e0\",\"designSystem\":{\"displayName\":\"Cinematic Intelligence\",\"styleGuidelines\":\"## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"designMd\":\"---\\nname: Cinematic Intelligence\\ncolors:\\n  surface: '#071325'\\n  surface-dim: '#071325'\\n  surface-bright: '#2e394d'\\n  surface-container-lowest: '#030e20'\\n  surface-container-low: '#101c2e'\\n  surface-container: '#142032'\\n  surface-container-high: '#1f2a3d'\\n  surface-container-highest: '#2a3548'\\n  on-surface: '#d7e3fc'\\n  on-surface-variant: '#e1bfb8'\\n  inverse-surface: '#d7e3fc'\\n  inverse-on-surface: '#253144'\\n  outline: '#a88a83'\\n  outline-variant: '#59413c'\\n  surface-tint: '#ffb4a3'\\n  primary: '#ffb4a3'\\n  on-primary: '#630f00'\\n  primary-container: '#ff6b4a'\\n  on-primary-container: '#661000'\\n  inverse-primary: '#ae3115'\\n  secondary: '#ffbd58'\\n  on-secondary: '#442b00'\\n  secondary-container: '#ea9f00'\\n  on-secondary-container: '#5b3b00'\\n  tertiary: '#afcbd7'\\n  on-tertiary: '#18343d'\\n  tertiary-container: '#829ea9'\\n  on-tertiary-container: '#1a353e'\\n  error: '#ffb4ab'\\n  on-error: '#690005'\\n  error-container: '#93000a'\\n  on-error-container: '#ffdad6'\\n  primary-fixed: '#ffdad2'\\n  primary-fixed-dim: '#ffb4a3'\\n  on-primary-fixed: '#3d0600'\\n  on-primary-fixed-variant: '#8c1900'\\n  secondary-fixed: '#ffddb1'\\n  secondary-fixed-dim: '#ffba4b'\\n  on-secondary-fixed: '#291800'\\n  on-secondary-fixed-variant: '#624000'\\n  tertiary-fixed: '#cae7f3'\\n  tertiary-fixed-dim: '#afcbd7'\\n  on-tertiary-fixed: '#011f27'\\n  on-tertiary-fixed-variant: '#304b54'\\n  background: '#071325'\\n  on-background: '#d7e3fc'\\n  surface-variant: '#2a3548'\\ntypography:\\n  display-lg:\\n    fontFamily: Sora\\n    fontSize: 48px\\n    fontWeight: '700'\\n    lineHeight: 56px\\n    letterSpacing: -0.02em\\n  headline-lg:\\n    fontFamily: Sora\\n    fontSize: 32px\\n    fontWeight: '600'\\n    lineHeight: 40px\\n    letterSpacing: -0.01em\\n  headline-lg-mobile:\\n    fontFamily: Sora\\n    fontSize: 24px\\n    fontWeight: '600'\\n    lineHeight: 32px\\n  body-md:\\n    fontFamily: Sora\\n    fontSize: 16px\\n    fontWeight: '400'\\n    lineHeight: 24px\\n  data-lg:\\n    fontFamily: JetBrains Mono\\n    fontSize: 18px\\n    fontWeight: '500'\\n    lineHeight: 24px\\n  data-sm:\\n    fontFamily: JetBrains Mono\\n    fontSize: 12px\\n    fontWeight: '400'\\n    lineHeight: 16px\\n    letterSpacing: 0.05em\\n  label-caps:\\n    fontFamily: JetBrains Mono\\n    fontSize: 10px\\n    fontWeight: '700'\\n    lineHeight: 12px\\n    letterSpacing: 0.1em\\nrounded:\\n  sm: 0.25rem\\n  DEFAULT: 0.5rem\\n  md: 0.75rem\\n  lg: 1rem\\n  xl: 1.5rem\\n  full: 9999px\\nspacing:\\n  container-padding: 1.5rem\\n  gutter: 1rem\\n  stack-sm: 0.5rem\\n  stack-md: 1rem\\n  stack-lg: 2rem\\n---\\n\\n## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Colors\\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \\n\\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \\n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \\\"Navy\\\" atmosphere without shifting into pure black/white.\\n\\n## Typography\\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \\n\\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \\\"content\\\" from \\\"data.\\\" \\n\\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Shapes\\nThe shape language is **Rounded (12px - 16px)**. This balances the \\\"sharp\\\" technical nature of the data with a modern, high-end SaaS feel. \\n\\n- **Cards & Primary Containers:** `rounded-xl` (16px).\\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"}},\"version\":\"1\"}},{\"design\":{\"screens\":[{\"screenshot\":{\"name\":\"projects/12970066380241966656/files/282a01e601ea496cb220c90a80e2e062\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/AP1WRLujXourm9kz9pKeSLZAZ_xwQwEVo5FI6B5JDfS1Q3EsgYtpEESS2eKhBSQHLr1DQr3ixzWg_fcZZWKBwFSpT3O83UUllBLPzRTcZKnekXHKQJVzN1dkfo94gGm4CZ9_L6NV3gaLSF7WCJnW5W4TPn4vdemRIg0Uru1XdlPj0t0U-7gMKqRKzWoU1P7fqfs_zjmzoxxNeRVkue0VwVvDtpkxeKQuEpHjYBnzD5XkXEQAio-jRYzQTe8_puv1\"},\"htmlCode\":{\"name\":\"projects/12970066380241966656/files/335e68ccc6a646839800c48e448be986\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQ5MDgwNWFiOTYwZjQwOWQ5YWVlYzZiM2E5YTE4M2UwEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242\",\"mimeType\":\"image/svg+xml\"},\"id\":\"246ce0b7e041422899e06867aac5e69b\",\"generatedBy\":\"interactive_ui_controller\",\"width\":\"200\",\"height\":\"200\",\"title\":\"ClipForge Logo\",\"prompt\":\"Brand logo. - Primary color: #ff6b4a\\n- Font: sora\\n- Mode: dark\\n- Roundness: rounded-md\\n\",\"name\":\"projects/12970066380241966656/screens/246ce0b7e041422899e06867aac5e69b\",\"theme\":{},\"screenType\":\"IMAGE\",\"screenMetadata\":{\"agentType\":\"PRO_AGENT\",\"status\":\"COMPLETE\",\"displayMode\":\"SVG\"}},{\"screenshot\":{\"name\":\"projects/12970066380241966656/files/fa9d722941f44b9c9cd297aed9d8e218\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/AP1WRLthJHOvc3kxifUTgh3nrR_0CW_vlvSooPJyB7WtVsnP7gmVudIZtV0YnH1pUOEcsjD6LvyCPNKtqJ04O9n1JIYmU2BT3Ho5YBWMq5cInF_m5f9RT40SCUCnB9V0eyAdDOTG-ee3M53QanbYI4MrDABxLVHmqeLCRfCKGK9JVLBpLjiCMz58Xsg_iAKsFjKfE3IQ8jhCoeSko3YlmyFJcSDlFsZigfh2LyzIpFSug2ncQaDDmcn3dZr9OfYV\"},\"htmlCode\":{\"name\":\"projects/12970066380241966656/files/82c1a377268846bbaaf1113468b25487\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzE5YjI1MzNkNjRmYjRkZGY5MGZjZTliZWRhYmZmM2UzEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242\",\"mimeType\":\"text/html\"},\"id\":\"805744cfdab54747bd19faa4bd3cbc0c\",\"generatedBy\":\"figaro_agent\",\"width\":\"2560\",\"height\":\"2048\",\"title\":\"ClipForge Settings & Team\",\"prompt\":\"PAGE 3 — TEAM & SETTINGS PANEL:\\nEnterprise-grade management and configuration.\\n- Layout: Standard settings sidebar and main content area.\\n- Sections: User Management (Team list), Billing Status (Current plan, usage), API Key Matrices (JetBrains Mono for keys), Profile Workflows.\\n- Components: rounded-xl cards, p-6 padding, grid-cols-12 layout.\\n- Enterprise Features: Embed cascade radar (visualized as a complex list or simplified graph showing Slack/Wiki connections), Unpublish impact preview.\\n- Aesthetic: Glassmorphic teal surfaces on navy background.\\n- Branding: {{DATA:IMAGE:IMAGE_2}} logo in the header.\\n## Available Images\\nYou MUST include the following images in this design. You must reference them\\nby putting their exact placeholder IDs in `src` attributes or CSS\\n`background-image` rules. Do NOT use external URLs or generate new\\nplaceholders. Preserve these IDs exactly as written. Read each image's\\nDescription to understand its subject, intended section, and visual role.\\n\\n- {{DATA:IMAGE:IMAGE_2}}\\n  Alt Text: ClipForge Logo\\n  Description: Brand logo. - Primary color: #ff6b4a\\n- Font: sora\\n- Mode: dark\\n- Roundness: rounded-md\\n\\n  Dimensions: 200x200\\n  Aspect Ratio: 1.00\\n  Colors: #0A1628, #FF6B4A, #FFB020\\n\",\"name\":\"projects/12970066380241966656/screens/805744cfdab54747bd19faa4bd3cbc0c\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"},\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\",\"screenMetadata\":{\"agentType\":\"PRO_AGENT\",\"status\":\"COMPLETE\"},\"designSystem\":{\"name\":\"assets/e4da7143410d473883bf445fb24e99e0\",\"designSystem\":{\"displayName\":\"Cinematic Intelligence\",\"styleGuidelines\":\"## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"designMd\":\"---\\nname: Cinematic Intelligence\\ncolors:\\n  surface: '#071325'\\n  surface-dim: '#071325'\\n  surface-bright: '#2e394d'\\n  surface-container-lowest: '#030e20'\\n  surface-container-low: '#101c2e'\\n  surface-container: '#142032'\\n  surface-container-high: '#1f2a3d'\\n  surface-container-highest: '#2a3548'\\n  on-surface: '#d7e3fc'\\n  on-surface-variant: '#e1bfb8'\\n  inverse-surface: '#d7e3fc'\\n  inverse-on-surface: '#253144'\\n  outline: '#a88a83'\\n  outline-variant: '#59413c'\\n  surface-tint: '#ffb4a3'\\n  primary: '#ffb4a3'\\n  on-primary: '#630f00'\\n  primary-container: '#ff6b4a'\\n  on-primary-container: '#661000'\\n  inverse-primary: '#ae3115'\\n  secondary: '#ffbd58'\\n  on-secondary: '#442b00'\\n  secondary-container: '#ea9f00'\\n  on-secondary-container: '#5b3b00'\\n  tertiary: '#afcbd7'\\n  on-tertiary: '#18343d'\\n  tertiary-container: '#829ea9'\\n  on-tertiary-container: '#1a353e'\\n  error: '#ffb4ab'\\n  on-error: '#690005'\\n  error-container: '#93000a'\\n  on-error-container: '#ffdad6'\\n  primary-fixed: '#ffdad2'\\n  primary-fixed-dim: '#ffb4a3'\\n  on-primary-fixed: '#3d0600'\\n  on-primary-fixed-variant: '#8c1900'\\n  secondary-fixed: '#ffddb1'\\n  secondary-fixed-dim: '#ffba4b'\\n  on-secondary-fixed: '#291800'\\n  on-secondary-fixed-variant: '#624000'\\n  tertiary-fixed: '#cae7f3'\\n  tertiary-fixed-dim: '#afcbd7'\\n  on-tertiary-fixed: '#011f27'\\n  on-tertiary-fixed-variant: '#304b54'\\n  background: '#071325'\\n  on-background: '#d7e3fc'\\n  surface-variant: '#2a3548'\\ntypography:\\n  display-lg:\\n    fontFamily: Sora\\n    fontSize: 48px\\n    fontWeight: '700'\\n    lineHeight: 56px\\n    letterSpacing: -0.02em\\n  headline-lg:\\n    fontFamily: Sora\\n    fontSize: 32px\\n    fontWeight: '600'\\n    lineHeight: 40px\\n    letterSpacing: -0.01em\\n  headline-lg-mobile:\\n    fontFamily: Sora\\n    fontSize: 24px\\n    fontWeight: '600'\\n    lineHeight: 32px\\n  body-md:\\n    fontFamily: Sora\\n    fontSize: 16px\\n    fontWeight: '400'\\n    lineHeight: 24px\\n  data-lg:\\n    fontFamily: JetBrains Mono\\n    fontSize: 18px\\n    fontWeight: '500'\\n    lineHeight: 24px\\n  data-sm:\\n    fontFamily: JetBrains Mono\\n    fontSize: 12px\\n    fontWeight: '400'\\n    lineHeight: 16px\\n    letterSpacing: 0.05em\\n  label-caps:\\n    fontFamily: JetBrains Mono\\n    fontSize: 10px\\n    fontWeight: '700'\\n    lineHeight: 12px\\n    letterSpacing: 0.1em\\nrounded:\\n  sm: 0.25rem\\n  DEFAULT: 0.5rem\\n  md: 0.75rem\\n  lg: 1rem\\n  xl: 1.5rem\\n  full: 9999px\\nspacing:\\n  container-padding: 1.5rem\\n  gutter: 1rem\\n  stack-sm: 0.5rem\\n  stack-md: 1rem\\n  stack-lg: 2rem\\n---\\n\\n## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Colors\\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \\n\\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \\n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \\\"Navy\\\" atmosphere without shifting into pure black/white.\\n\\n## Typography\\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \\n\\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \\\"content\\\" from \\\"data.\\\" \\n\\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Shapes\\nThe shape language is **Rounded (12px - 16px)**. This balances the \\\"sharp\\\" technical nature of the data with a modern, high-end SaaS feel. \\n\\n- **Cards & Primary Containers:** `rounded-xl` (16px).\\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"}},\"version\":\"1\"}},{\"screenshot\":{\"name\":\"projects/12970066380241966656/files/2316a5b74fea4788ab6bef031cd0c1db\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/AP1WRLt-Y4iG5ulnNd_mHoG9mqfDWEGbK7VH55tGIlJGMfNJVv9fC3b-Eyb43795hMAVnMiOac30AilM5NDM2kTI-jJ5CtrCYBa5zfCd6X75n3R4VtO0iBvslWrQC1_U8FcfXanebgmTLzwLRZdWqPBggU18RgMEgBShwkXXigan8xXJIXwrjMtpjSv25za6gyziLbNXKT9h4Z4pCdz9mxrAG4sXvgZl2-k0pe-mq-hjYeqLid03Aaj_d2vAWRBs\"},\"htmlCode\":{\"name\":\"projects/12970066380241966656/files/24062f5467004e25ae99f69ffca237cc\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzU1MGMyYjllZjcyMzRlZTI4ZjZjZTRiMmRkOGViZjkyEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242\",\"mimeType\":\"text/html\"},\"id\":\"3f9be4be5c58480eb74e3b22faa0d4ea\",\"generatedBy\":\"figaro_agent\",\"width\":\"2560\",\"height\":\"2048\",\"title\":\"ClipForge Workspace\",\"prompt\":\"PAGE 1 — MAIN WORKSPACE:\\nA high-fidelity async video recording center.\\n- Layout: Side navigation, top app bar, and a central recording panel.\\n- Left Sidebar: Navigation for Clip Library, Viewer Drop-off Inbox, and Workspace.\\n- Center Panel: Large video player/preview for async recording.\\n- Right Drawer (Clip Inspector): Detailed inspector for the current clip.\\n- Viewer Drop-off Inbox: A list below the player with second-by-second drop-off severity badges (#FF6B4A), rewind hotspot chips, and engagement drift indicators.\\n- Auto-Highlight Suggestion Panel: p-6 padding, rounded-xl cards with deep coral accents.\\n- Aesthetic: Glassmorphism surfaces, Obsidian Navy #0A1628 background, Obsidian Teal #132F38 cards.\\n- Logo: {{DATA:IMAGE:IMAGE_2}}.\\n## Available Images\\nYou MUST include the following images in this design. You must reference them\\nby putting their exact placeholder IDs in `src` attributes or CSS\\n`background-image` rules. Do NOT use external URLs or generate new\\nplaceholders. Preserve these IDs exactly as written. Read each image's\\nDescription to understand its subject, intended section, and visual role.\\n\\n- {{DATA:IMAGE:IMAGE_2}}\\n  Alt Text: ClipForge Logo\\n  Description: Brand logo. - Primary color: #ff6b4a\\n- Font: sora\\n- Mode: dark\\n- Roundness: rounded-md\\n\\n  Dimensions: 200x200\\n  Aspect Ratio: 1.00\\n  Colors: #0A1628, #FF6B4A, #FFB020\\n\",\"name\":\"projects/12970066380241966656/screens/3f9be4be5c58480eb74e3b22faa0d4ea\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"},\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\",\"screenMetadata\":{\"agentType\":\"PRO_AGENT\",\"status\":\"COMPLETE\"},\"designSystem\":{\"name\":\"assets/e4da7143410d473883bf445fb24e99e0\",\"designSystem\":{\"displayName\":\"Cinematic Intelligence\",\"styleGuidelines\":\"## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"designMd\":\"---\\nname: Cinematic Intelligence\\ncolors:\\n  surface: '#071325'\\n  surface-dim: '#071325'\\n  surface-bright: '#2e394d'\\n  surface-container-lowest: '#030e20'\\n  surface-container-low: '#101c2e'\\n  surface-container: '#142032'\\n  surface-container-high: '#1f2a3d'\\n  surface-container-highest: '#2a3548'\\n  on-surface: '#d7e3fc'\\n  on-surface-variant: '#e1bfb8'\\n  inverse-surface: '#d7e3fc'\\n  inverse-on-surface: '#253144'\\n  outline: '#a88a83'\\n  outline-variant: '#59413c'\\n  surface-tint: '#ffb4a3'\\n  primary: '#ffb4a3'\\n  on-primary: '#630f00'\\n  primary-container: '#ff6b4a'\\n  on-primary-container: '#661000'\\n  inverse-primary: '#ae3115'\\n  secondary: '#ffbd58'\\n  on-secondary: '#442b00'\\n  secondary-container: '#ea9f00'\\n  on-secondary-container: '#5b3b00'\\n  tertiary: '#afcbd7'\\n  on-tertiary: '#18343d'\\n  tertiary-container: '#829ea9'\\n  on-tertiary-container: '#1a353e'\\n  error: '#ffb4ab'\\n  on-error: '#690005'\\n  error-container: '#93000a'\\n  on-error-container: '#ffdad6'\\n  primary-fixed: '#ffdad2'\\n  primary-fixed-dim: '#ffb4a3'\\n  on-primary-fixed: '#3d0600'\\n  on-primary-fixed-variant: '#8c1900'\\n  secondary-fixed: '#ffddb1'\\n  secondary-fixed-dim: '#ffba4b'\\n  on-secondary-fixed: '#291800'\\n  on-secondary-fixed-variant: '#624000'\\n  tertiary-fixed: '#cae7f3'\\n  tertiary-fixed-dim: '#afcbd7'\\n  on-tertiary-fixed: '#011f27'\\n  on-tertiary-fixed-variant: '#304b54'\\n  background: '#071325'\\n  on-background: '#d7e3fc'\\n  surface-variant: '#2a3548'\\ntypography:\\n  display-lg:\\n    fontFamily: Sora\\n    fontSize: 48px\\n    fontWeight: '700'\\n    lineHeight: 56px\\n    letterSpacing: -0.02em\\n  headline-lg:\\n    fontFamily: Sora\\n    fontSize: 32px\\n    fontWeight: '600'\\n    lineHeight: 40px\\n    letterSpacing: -0.01em\\n  headline-lg-mobile:\\n    fontFamily: Sora\\n    fontSize: 24px\\n    fontWeight: '600'\\n    lineHeight: 32px\\n  body-md:\\n    fontFamily: Sora\\n    fontSize: 16px\\n    fontWeight: '400'\\n    lineHeight: 24px\\n  data-lg:\\n    fontFamily: JetBrains Mono\\n    fontSize: 18px\\n    fontWeight: '500'\\n    lineHeight: 24px\\n  data-sm:\\n    fontFamily: JetBrains Mono\\n    fontSize: 12px\\n    fontWeight: '400'\\n    lineHeight: 16px\\n    letterSpacing: 0.05em\\n  label-caps:\\n    fontFamily: JetBrains Mono\\n    fontSize: 10px\\n    fontWeight: '700'\\n    lineHeight: 12px\\n    letterSpacing: 0.1em\\nrounded:\\n  sm: 0.25rem\\n  DEFAULT: 0.5rem\\n  md: 0.75rem\\n  lg: 1rem\\n  xl: 1.5rem\\n  full: 9999px\\nspacing:\\n  container-padding: 1.5rem\\n  gutter: 1rem\\n  stack-sm: 0.5rem\\n  stack-md: 1rem\\n  stack-lg: 2rem\\n---\\n\\n## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Colors\\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \\n\\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \\n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \\\"Navy\\\" atmosphere without shifting into pure black/white.\\n\\n## Typography\\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \\n\\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \\\"content\\\" from \\\"data.\\\" \\n\\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Shapes\\nThe shape language is **Rounded (12px - 16px)**. This balances the \\\"sharp\\\" technical nature of the data with a modern, high-end SaaS feel. \\n\\n- **Cards & Primary Containers:** `rounded-xl` (16px).\\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"}},\"version\":\"1\"}},{\"screenshot\":{\"name\":\"projects/12970066380241966656/files/80b259b030f7416c88d186e3b9625863\",\"downloadUrl\":\"https://lh3.googleusercontent.com/aida/AP1WRLtrQgyeroq1EJmMRyv_obbMg5zRSPLedBouRdj9zmr59FdD9wWaYDHvdOgbg6oaXJ3W_YXeuZYUI6dYJjdws7yLoaGnfiwbexx6YNEQbgrOAR_55yrt4CqfZJEYzPwNnup2vY8nGzwSx_yUC8JHDOMxrjJe-YRofQo-jco6ulMKtbe6k8qSxiJTmd9PU3rCWc9kUO29n9LALaF_zmU5Jpxt6wVvJmJ-FrLlSZkjNyi7hwrlUmNyzFsVt5f5\"},\"htmlCode\":{\"name\":\"projects/12970066380241966656/files/0177042fb11d4f29ad0aecc61e0e27ab\",\"downloadUrl\":\"https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzJjN2EzNGNmNzYzZjQ2OWU4MzczZjI5OGVlMzgzZGUyEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242\",\"mimeType\":\"text/html\"},\"id\":\"8036b0cd6cac40f5a4a60fc303fd73be\",\"generatedBy\":\"figaro_agent\",\"width\":\"2560\",\"height\":\"2096\",\"title\":\"ClipForge Metrics Dashboard\",\"prompt\":\"PAGE 2 — METRICS DASHBOARD:\\nData-dense analytics for video intelligence.\\n- High-Density Viewer Drop-off Heatmap: grid-cols-12 layout showing cell-based engagement.\\n- Engagement Impact Score Charts: Trend lines and bar graphs using Sora for titles and JetBrains Mono for metrics.\\n- Heatmap Grid Cells: Color scale from deep coral (#FF6B4A) to electric amber (#FFB020).\\n- Monetization Tier Indicators: Badges for Starter, Pro, and Enterprise.\\n- Reporting Grids: Clean, high-density data tables for viewer sessions and drop-off timestamps.\\n- Aesthetic: Obsidian Navy base with glowing amber and coral accents.\\n- Interaction: duration-200 hover transitions on heatmap cells showing detailed tooltips.\",\"name\":\"projects/12970066380241966656/screens/8036b0cd6cac40f5a4a60fc303fd73be\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"},\"deviceType\":\"DESKTOP\",\"screenType\":\"DESIGN\",\"screenMetadata\":{\"agentType\":\"PRO_AGENT\",\"status\":\"COMPLETE\"},\"designSystem\":{\"name\":\"assets/e4da7143410d473883bf445fb24e99e0\",\"designSystem\":{\"displayName\":\"Cinematic Intelligence\",\"styleGuidelines\":\"## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"theme\":{\"colorMode\":\"DARK\",\"font\":\"SORA\",\"roundness\":\"ROUND_EIGHT\",\"customColor\":\"#ff6b4a\",\"headlineFont\":\"SORA\",\"bodyFont\":\"SORA\",\"labelFont\":\"JETBRAINS_MONO\",\"namedColors\":{\"background\":\"#071325\",\"error\":\"#ffb4ab\",\"error_container\":\"#93000a\",\"inverse_on_surface\":\"#253144\",\"inverse_primary\":\"#ae3115\",\"inverse_surface\":\"#d7e3fc\",\"on_background\":\"#d7e3fc\",\"on_error\":\"#690005\",\"on_error_container\":\"#ffdad6\",\"on_primary\":\"#630f00\",\"on_primary_container\":\"#661000\",\"on_primary_fixed\":\"#3d0600\",\"on_primary_fixed_variant\":\"#8c1900\",\"on_secondary\":\"#442b00\",\"on_secondary_container\":\"#5b3b00\",\"on_secondary_fixed\":\"#291800\",\"on_secondary_fixed_variant\":\"#624000\",\"on_surface\":\"#d7e3fc\",\"on_surface_variant\":\"#e1bfb8\",\"on_tertiary\":\"#18343d\",\"on_tertiary_container\":\"#1a353e\",\"on_tertiary_fixed\":\"#011f27\",\"on_tertiary_fixed_variant\":\"#304b54\",\"outline\":\"#a88a83\",\"outline_variant\":\"#59413c\",\"primary\":\"#ffb4a3\",\"primary_container\":\"#ff6b4a\",\"primary_fixed\":\"#ffdad2\",\"primary_fixed_dim\":\"#ffb4a3\",\"secondary\":\"#ffbd58\",\"secondary_container\":\"#ea9f00\",\"secondary_fixed\":\"#ffddb1\",\"secondary_fixed_dim\":\"#ffba4b\",\"surface\":\"#071325\",\"surface_bright\":\"#2e394d\",\"surface_container\":\"#142032\",\"surface_container_high\":\"#1f2a3d\",\"surface_container_highest\":\"#2a3548\",\"surface_container_low\":\"#101c2e\",\"surface_container_lowest\":\"#030e20\",\"surface_dim\":\"#071325\",\"surface_tint\":\"#ffb4a3\",\"surface_variant\":\"#2a3548\",\"tertiary\":\"#afcbd7\",\"tertiary_container\":\"#829ea9\",\"tertiary_fixed\":\"#cae7f3\",\"tertiary_fixed_dim\":\"#afcbd7\"},\"designMd\":\"---\\nname: Cinematic Intelligence\\ncolors:\\n  surface: '#071325'\\n  surface-dim: '#071325'\\n  surface-bright: '#2e394d'\\n  surface-container-lowest: '#030e20'\\n  surface-container-low: '#101c2e'\\n  surface-container: '#142032'\\n  surface-container-high: '#1f2a3d'\\n  surface-container-highest: '#2a3548'\\n  on-surface: '#d7e3fc'\\n  on-surface-variant: '#e1bfb8'\\n  inverse-surface: '#d7e3fc'\\n  inverse-on-surface: '#253144'\\n  outline: '#a88a83'\\n  outline-variant: '#59413c'\\n  surface-tint: '#ffb4a3'\\n  primary: '#ffb4a3'\\n  on-primary: '#630f00'\\n  primary-container: '#ff6b4a'\\n  on-primary-container: '#661000'\\n  inverse-primary: '#ae3115'\\n  secondary: '#ffbd58'\\n  on-secondary: '#442b00'\\n  secondary-container: '#ea9f00'\\n  on-secondary-container: '#5b3b00'\\n  tertiary: '#afcbd7'\\n  on-tertiary: '#18343d'\\n  tertiary-container: '#829ea9'\\n  on-tertiary-container: '#1a353e'\\n  error: '#ffb4ab'\\n  on-error: '#690005'\\n  error-container: '#93000a'\\n  on-error-container: '#ffdad6'\\n  primary-fixed: '#ffdad2'\\n  primary-fixed-dim: '#ffb4a3'\\n  on-primary-fixed: '#3d0600'\\n  on-primary-fixed-variant: '#8c1900'\\n  secondary-fixed: '#ffddb1'\\n  secondary-fixed-dim: '#ffba4b'\\n  on-secondary-fixed: '#291800'\\n  on-secondary-fixed-variant: '#624000'\\n  tertiary-fixed: '#cae7f3'\\n  tertiary-fixed-dim: '#afcbd7'\\n  on-tertiary-fixed: '#011f27'\\n  on-tertiary-fixed-variant: '#304b54'\\n  background: '#071325'\\n  on-background: '#d7e3fc'\\n  surface-variant: '#2a3548'\\ntypography:\\n  display-lg:\\n    fontFamily: Sora\\n    fontSize: 48px\\n    fontWeight: '700'\\n    lineHeight: 56px\\n    letterSpacing: -0.02em\\n  headline-lg:\\n    fontFamily: Sora\\n    fontSize: 32px\\n    fontWeight: '600'\\n    lineHeight: 40px\\n    letterSpacing: -0.01em\\n  headline-lg-mobile:\\n    fontFamily: Sora\\n    fontSize: 24px\\n    fontWeight: '600'\\n    lineHeight: 32px\\n  body-md:\\n    fontFamily: Sora\\n    fontSize: 16px\\n    fontWeight: '400'\\n    lineHeight: 24px\\n  data-lg:\\n    fontFamily: JetBrains Mono\\n    fontSize: 18px\\n    fontWeight: '500'\\n    lineHeight: 24px\\n  data-sm:\\n    fontFamily: JetBrains Mono\\n    fontSize: 12px\\n    fontWeight: '400'\\n    lineHeight: 16px\\n    letterSpacing: 0.05em\\n  label-caps:\\n    fontFamily: JetBrains Mono\\n    fontSize: 10px\\n    fontWeight: '700'\\n    lineHeight: 12px\\n    letterSpacing: 0.1em\\nrounded:\\n  sm: 0.25rem\\n  DEFAULT: 0.5rem\\n  md: 0.75rem\\n  lg: 1rem\\n  xl: 1.5rem\\n  full: 9999px\\nspacing:\\n  container-padding: 1.5rem\\n  gutter: 1rem\\n  stack-sm: 0.5rem\\n  stack-md: 1rem\\n  stack-lg: 2rem\\n---\\n\\n## Brand & Style\\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \\\"SaaS-blue\\\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \\n\\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \\\"Mission Control\\\" level oversight.\\n\\n## Colors\\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \\n\\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \\n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \\\"Navy\\\" atmosphere without shifting into pure black/white.\\n\\n## Typography\\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \\n\\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \\\"content\\\" from \\\"data.\\\" \\n\\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\\n\\n## Layout & Spacing\\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \\n\\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \\\"Dense Mode,\\\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\\n\\n## Elevation & Depth\\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \\n\\n1.  **Level 0 (Base):** Obsidian Navy background.\\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\\n\\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \\\"lift.\\\"\\n\\n## Shapes\\nThe shape language is **Rounded (12px - 16px)**. This balances the \\\"sharp\\\" technical nature of the data with a modern, high-end SaaS feel. \\n\\n- **Cards & Primary Containers:** `rounded-xl` (16px).\\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\\n\\n## Components\\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\\n- **Severity Badges:** \\n    - *Critical:* Deep Coral background, subtle white text.\\n    - *Insight/Warning:* Electric Amber background, dark navy text.\\n- **Enterprise Badges:** \\n    - *Starter:* Transparent with white border.\\n    - *Pro:* Electric Amber border/text.\\n    - *Enterprise:* Deep Coral gradient border.\\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).\",\"colorVariant\":\"FIDELITY\",\"overridePrimaryColor\":\"#ff6b4a\",\"overrideSecondaryColor\":\"#ffb020\",\"overrideTertiaryColor\":\"#132f38\",\"overrideNeutralColor\":\"#0a1628\",\"spacingScale\":2,\"typography\":{\"body-md\":{\"fontFamily\":\"Sora\",\"fontSize\":\"16px\",\"fontWeight\":\"400\",\"lineHeight\":\"24px\"},\"data-lg\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"18px\",\"fontWeight\":\"500\",\"lineHeight\":\"24px\"},\"data-sm\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"12px\",\"fontWeight\":\"400\",\"lineHeight\":\"16px\",\"letterSpacing\":\"0.05em\"},\"display-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"48px\",\"fontWeight\":\"700\",\"lineHeight\":\"56px\",\"letterSpacing\":\"-0.02em\"},\"headline-lg\":{\"fontFamily\":\"Sora\",\"fontSize\":\"32px\",\"fontWeight\":\"600\",\"lineHeight\":\"40px\",\"letterSpacing\":\"-0.01em\"},\"headline-lg-mobile\":{\"fontFamily\":\"Sora\",\"fontSize\":\"24px\",\"fontWeight\":\"600\",\"lineHeight\":\"32px\"},\"label-caps\":{\"fontFamily\":\"JetBrains Mono\",\"fontSize\":\"10px\",\"fontWeight\":\"700\",\"lineHeight\":\"12px\",\"letterSpacing\":\"0.1em\"}},\"spacing\":{\"container-padding\":\"1.5rem\",\"gutter\":\"1rem\",\"stack-lg\":\"2rem\",\"stack-md\":\"1rem\",\"stack-sm\":\"0.5rem\"},\"headlineFontFamily\":\"Sora\",\"bodyFontFamily\":\"Sora\",\"labelFontFamily\":\"Jetbrains Mono\"}},\"version\":\"1\"}}],\"theme\":{}}},{\"text\":\"I have designed the 'ClipForge' platform, a premium Turkish-first async video intelligence suite. The system follows an \\\"Obsidian Cinematic\\\" aesthetic, utilizing a dark-first palette of Obsidian Navy and Teal with high-energy Deep Coral and Electric Amber accents for critical data visualization.\\n\\n### Design Breakdown\\n\\n*   **Design System (`[Design_System]`)**: Established a high-fidelity foundation using **Sora** for UI and **JetBrains Mono** for data precision. The system enforces `p-6` padding, `rounded-xl` corners, and glassmorphic surface treatments.\\n*   **Main Workspace (`ClipForge Workspace`)**: A command center featuring a clip inspector drawer, a central recording preview, and the **Viewer Drop-off Inbox**. I've integrated second-by-second drop-off severity badges and rewind hotspot chips to help teams pinpoint exactly where engagement drifts.\\n*   **Metrics Dashboard (`ClipForge Metrics Dashboard`)**: A high-density data view featuring a **12-column heatmap grid**. Engagement impact is visualized through a color scale from Deep Coral to Electric Amber, allowing for instant identification of segment \\\"blast radius.\\\"\\n*   **Settings & Team (`ClipForge Settings & Team`)**: An enterprise-grade management panel covering user roles, billing, and API key matrices. I've also included space for the **Embed Cascade Radar** to preview the impact of unpublishing clips across connected platforms like Slack and Wiki docs.\\n\\nThe brand identity is anchored by the custom-designed **ClipForge Logo** (`ClipForge Logo`), which mirrors the cinematic glow of the platform.\\n\\nHow would you like to refine the intelligence rules or the heatmap density?\"},{\"suggestion\":\"Add the 'Embed Cascade Radar' visual graph to settings\"},{\"suggestion\":\"Refine the Viewer Drop-off Inbox with more rule filters\"},{\"suggestion\":\"Create a 'Pro' tier variant of the dashboard\"}]}",
+          "type": "text"
+        }
+      ],
+      "structuredContent": {
+        "outputComponents": [
+          {
+            "designSystem": {
+              "designSystem": {
+                "displayName": "Cinematic Intelligence",
+                "styleGuidelines": "## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                "theme": {
+                  "bodyFont": "SORA",
+                  "bodyFontFamily": "Sora",
+                  "colorMode": "DARK",
+                  "colorVariant": "FIDELITY",
+                  "customColor": "#ff6b4a",
+                  "designMd": "---\nname: Cinematic Intelligence\ncolors:\n  surface: '#071325'\n  surface-dim: '#071325'\n  surface-bright: '#2e394d'\n  surface-container-lowest: '#030e20'\n  surface-container-low: '#101c2e'\n  surface-container: '#142032'\n  surface-container-high: '#1f2a3d'\n  surface-container-highest: '#2a3548'\n  on-surface: '#d7e3fc'\n  on-surface-variant: '#e1bfb8'\n  inverse-surface: '#d7e3fc'\n  inverse-on-surface: '#253144'\n  outline: '#a88a83'\n  outline-variant: '#59413c'\n  surface-tint: '#ffb4a3'\n  primary: '#ffb4a3'\n  on-primary: '#630f00'\n  primary-container: '#ff6b4a'\n  on-primary-container: '#661000'\n  inverse-primary: '#ae3115'\n  secondary: '#ffbd58'\n  on-secondary: '#442b00'\n  secondary-container: '#ea9f00'\n  on-secondary-container: '#5b3b00'\n  tertiary: '#afcbd7'\n  on-tertiary: '#18343d'\n  tertiary-container: '#829ea9'\n  on-tertiary-container: '#1a353e'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad2'\n  primary-fixed-dim: '#ffb4a3'\n  on-primary-fixed: '#3d0600'\n  on-primary-fixed-variant: '#8c1900'\n  secondary-fixed: '#ffddb1'\n  secondary-fixed-dim: '#ffba4b'\n  on-secondary-fixed: '#291800'\n  on-secondary-fixed-variant: '#624000'\n  tertiary-fixed: '#cae7f3'\n  tertiary-fixed-dim: '#afcbd7'\n  on-tertiary-fixed: '#011f27'\n  on-tertiary-fixed-variant: '#304b54'\n  background: '#071325'\n  on-background: '#d7e3fc'\n  surface-variant: '#2a3548'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-md:\n    fontFamily: Sora\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  data-lg:\n    fontFamily: JetBrains Mono\n    fontSize: 18px\n    fontWeight: '500'\n    lineHeight: 24px\n  data-sm:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 12px\n    letterSpacing: 0.1em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  container-padding: 1.5rem\n  gutter: 1rem\n  stack-sm: 0.5rem\n  stack-md: 1rem\n  stack-lg: 2rem\n---\n\n## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Colors\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \n\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \"Navy\" atmosphere without shifting into pure black/white.\n\n## Typography\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \n\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \"content\" from \"data.\" \n\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Shapes\nThe shape language is **Rounded (12px - 16px)**. This balances the \"sharp\" technical nature of the data with a modern, high-end SaaS feel. \n\n- **Cards & Primary Containers:** `rounded-xl` (16px).\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                  "font": "SORA",
+                  "headlineFont": "SORA",
+                  "headlineFontFamily": "Sora",
+                  "labelFont": "JETBRAINS_MONO",
+                  "labelFontFamily": "Jetbrains Mono",
+                  "namedColors": {
+                    "background": "#071325",
+                    "error": "#ffb4ab",
+                    "error_container": "#93000a",
+                    "inverse_on_surface": "#253144",
+                    "inverse_primary": "#ae3115",
+                    "inverse_surface": "#d7e3fc",
+                    "on_background": "#d7e3fc",
+                    "on_error": "#690005",
+                    "on_error_container": "#ffdad6",
+                    "on_primary": "#630f00",
+                    "on_primary_container": "#661000",
+                    "on_primary_fixed": "#3d0600",
+                    "on_primary_fixed_variant": "#8c1900",
+                    "on_secondary": "#442b00",
+                    "on_secondary_container": "#5b3b00",
+                    "on_secondary_fixed": "#291800",
+                    "on_secondary_fixed_variant": "#624000",
+                    "on_surface": "#d7e3fc",
+                    "on_surface_variant": "#e1bfb8",
+                    "on_tertiary": "#18343d",
+                    "on_tertiary_container": "#1a353e",
+                    "on_tertiary_fixed": "#011f27",
+                    "on_tertiary_fixed_variant": "#304b54",
+                    "outline": "#a88a83",
+                    "outline_variant": "#59413c",
+                    "primary": "#ffb4a3",
+                    "primary_container": "#ff6b4a",
+                    "primary_fixed": "#ffdad2",
+                    "primary_fixed_dim": "#ffb4a3",
+                    "secondary": "#ffbd58",
+                    "secondary_container": "#ea9f00",
+                    "secondary_fixed": "#ffddb1",
+                    "secondary_fixed_dim": "#ffba4b",
+                    "surface": "#071325",
+                    "surface_bright": "#2e394d",
+                    "surface_container": "#142032",
+                    "surface_container_high": "#1f2a3d",
+                    "surface_container_highest": "#2a3548",
+                    "surface_container_low": "#101c2e",
+                    "surface_container_lowest": "#030e20",
+                    "surface_dim": "#071325",
+                    "surface_tint": "#ffb4a3",
+                    "surface_variant": "#2a3548",
+                    "tertiary": "#afcbd7",
+                    "tertiary_container": "#829ea9",
+                    "tertiary_fixed": "#cae7f3",
+                    "tertiary_fixed_dim": "#afcbd7"
+                  },
+                  "overrideNeutralColor": "#0a1628",
+                  "overridePrimaryColor": "#ff6b4a",
+                  "overrideSecondaryColor": "#ffb020",
+                  "overrideTertiaryColor": "#132f38",
+                  "roundness": "ROUND_EIGHT",
+                  "spacing": {
+                    "container-padding": "1.5rem",
+                    "gutter": "1rem",
+                    "stack-lg": "2rem",
+                    "stack-md": "1rem",
+                    "stack-sm": "0.5rem"
+                  },
+                  "spacingScale": 2,
+                  "typography": {
+                    "body-md": {
+                      "fontFamily": "Sora",
+                      "fontSize": "16px",
+                      "fontWeight": "400",
+                      "lineHeight": "24px"
+                    },
+                    "data-lg": {
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": "18px",
+                      "fontWeight": "500",
+                      "lineHeight": "24px"
+                    },
+                    "data-sm": {
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": "12px",
+                      "fontWeight": "400",
+                      "letterSpacing": "0.05em",
+                      "lineHeight": "16px"
+                    },
+                    "display-lg": {
+                      "fontFamily": "Sora",
+                      "fontSize": "48px",
+                      "fontWeight": "700",
+                      "letterSpacing": "-0.02em",
+                      "lineHeight": "56px"
+                    },
+                    "headline-lg": {
+                      "fontFamily": "Sora",
+                      "fontSize": "32px",
+                      "fontWeight": "600",
+                      "letterSpacing": "-0.01em",
+                      "lineHeight": "40px"
+                    },
+                    "headline-lg-mobile": {
+                      "fontFamily": "Sora",
+                      "fontSize": "24px",
+                      "fontWeight": "600",
+                      "lineHeight": "32px"
+                    },
+                    "label-caps": {
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": "10px",
+                      "fontWeight": "700",
+                      "letterSpacing": "0.1em",
+                      "lineHeight": "12px"
+                    }
+                  }
+                }
+              },
+              "name": "assets/e4da7143410d473883bf445fb24e99e0",
+              "version": "1"
+            }
+          },
+          {
+            "design": {
+              "screens": [
+                {
+                  "generatedBy": "interactive_ui_controller",
+                  "height": "200",
+                  "htmlCode": {
+                    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzQ5MDgwNWFiOTYwZjQwOWQ5YWVlYzZiM2E5YTE4M2UwEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242",
+                    "mimeType": "image/svg+xml",
+                    "name": "projects/12970066380241966656/files/335e68ccc6a646839800c48e448be986"
+                  },
+                  "id": "246ce0b7e041422899e06867aac5e69b",
+                  "name": "projects/12970066380241966656/screens/246ce0b7e041422899e06867aac5e69b",
+                  "prompt": "Brand logo. - Primary color: #ff6b4a\n- Font: sora\n- Mode: dark\n- Roundness: rounded-md\n",
+                  "screenMetadata": {
+                    "agentType": "PRO_AGENT",
+                    "displayMode": "SVG",
+                    "status": "COMPLETE"
+                  },
+                  "screenType": "IMAGE",
+                  "screenshot": {
+                    "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLujXourm9kz9pKeSLZAZ_xwQwEVo5FI6B5JDfS1Q3EsgYtpEESS2eKhBSQHLr1DQr3ixzWg_fcZZWKBwFSpT3O83UUllBLPzRTcZKnekXHKQJVzN1dkfo94gGm4CZ9_L6NV3gaLSF7WCJnW5W4TPn4vdemRIg0Uru1XdlPj0t0U-7gMKqRKzWoU1P7fqfs_zjmzoxxNeRVkue0VwVvDtpkxeKQuEpHjYBnzD5XkXEQAio-jRYzQTe8_puv1",
+                    "name": "projects/12970066380241966656/files/282a01e601ea496cb220c90a80e2e062"
+                  },
+                  "theme": {},
+                  "title": "ClipForge Logo",
+                  "width": "200"
+                },
+                {
+                  "designSystem": {
+                    "designSystem": {
+                      "displayName": "Cinematic Intelligence",
+                      "styleGuidelines": "## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                      "theme": {
+                        "bodyFont": "SORA",
+                        "bodyFontFamily": "Sora",
+                        "colorMode": "DARK",
+                        "colorVariant": "FIDELITY",
+                        "customColor": "#ff6b4a",
+                        "designMd": "---\nname: Cinematic Intelligence\ncolors:\n  surface: '#071325'\n  surface-dim: '#071325'\n  surface-bright: '#2e394d'\n  surface-container-lowest: '#030e20'\n  surface-container-low: '#101c2e'\n  surface-container: '#142032'\n  surface-container-high: '#1f2a3d'\n  surface-container-highest: '#2a3548'\n  on-surface: '#d7e3fc'\n  on-surface-variant: '#e1bfb8'\n  inverse-surface: '#d7e3fc'\n  inverse-on-surface: '#253144'\n  outline: '#a88a83'\n  outline-variant: '#59413c'\n  surface-tint: '#ffb4a3'\n  primary: '#ffb4a3'\n  on-primary: '#630f00'\n  primary-container: '#ff6b4a'\n  on-primary-container: '#661000'\n  inverse-primary: '#ae3115'\n  secondary: '#ffbd58'\n  on-secondary: '#442b00'\n  secondary-container: '#ea9f00'\n  on-secondary-container: '#5b3b00'\n  tertiary: '#afcbd7'\n  on-tertiary: '#18343d'\n  tertiary-container: '#829ea9'\n  on-tertiary-container: '#1a353e'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad2'\n  primary-fixed-dim: '#ffb4a3'\n  on-primary-fixed: '#3d0600'\n  on-primary-fixed-variant: '#8c1900'\n  secondary-fixed: '#ffddb1'\n  secondary-fixed-dim: '#ffba4b'\n  on-secondary-fixed: '#291800'\n  on-secondary-fixed-variant: '#624000'\n  tertiary-fixed: '#cae7f3'\n  tertiary-fixed-dim: '#afcbd7'\n  on-tertiary-fixed: '#011f27'\n  on-tertiary-fixed-variant: '#304b54'\n  background: '#071325'\n  on-background: '#d7e3fc'\n  surface-variant: '#2a3548'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-md:\n    fontFamily: Sora\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  data-lg:\n    fontFamily: JetBrains Mono\n    fontSize: 18px\n    fontWeight: '500'\n    lineHeight: 24px\n  data-sm:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 12px\n    letterSpacing: 0.1em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  container-padding: 1.5rem\n  gutter: 1rem\n  stack-sm: 0.5rem\n  stack-md: 1rem\n  stack-lg: 2rem\n---\n\n## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Colors\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \n\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \"Navy\" atmosphere without shifting into pure black/white.\n\n## Typography\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \n\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \"content\" from \"data.\" \n\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Shapes\nThe shape language is **Rounded (12px - 16px)**. This balances the \"sharp\" technical nature of the data with a modern, high-end SaaS feel. \n\n- **Cards & Primary Containers:** `rounded-xl` (16px).\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                        "font": "SORA",
+                        "headlineFont": "SORA",
+                        "headlineFontFamily": "Sora",
+                        "labelFont": "JETBRAINS_MONO",
+                        "labelFontFamily": "Jetbrains Mono",
+                        "namedColors": {
+                          "background": "#071325",
+                          "error": "#ffb4ab",
+                          "error_container": "#93000a",
+                          "inverse_on_surface": "#253144",
+                          "inverse_primary": "#ae3115",
+                          "inverse_surface": "#d7e3fc",
+                          "on_background": "#d7e3fc",
+                          "on_error": "#690005",
+                          "on_error_container": "#ffdad6",
+                          "on_primary": "#630f00",
+                          "on_primary_container": "#661000",
+                          "on_primary_fixed": "#3d0600",
+                          "on_primary_fixed_variant": "#8c1900",
+                          "on_secondary": "#442b00",
+                          "on_secondary_container": "#5b3b00",
+                          "on_secondary_fixed": "#291800",
+                          "on_secondary_fixed_variant": "#624000",
+                          "on_surface": "#d7e3fc",
+                          "on_surface_variant": "#e1bfb8",
+                          "on_tertiary": "#18343d",
+                          "on_tertiary_container": "#1a353e",
+                          "on_tertiary_fixed": "#011f27",
+                          "on_tertiary_fixed_variant": "#304b54",
+                          "outline": "#a88a83",
+                          "outline_variant": "#59413c",
+                          "primary": "#ffb4a3",
+                          "primary_container": "#ff6b4a",
+                          "primary_fixed": "#ffdad2",
+                          "primary_fixed_dim": "#ffb4a3",
+                          "secondary": "#ffbd58",
+                          "secondary_container": "#ea9f00",
+                          "secondary_fixed": "#ffddb1",
+                          "secondary_fixed_dim": "#ffba4b",
+                          "surface": "#071325",
+                          "surface_bright": "#2e394d",
+                          "surface_container": "#142032",
+                          "surface_container_high": "#1f2a3d",
+                          "surface_container_highest": "#2a3548",
+                          "surface_container_low": "#101c2e",
+                          "surface_container_lowest": "#030e20",
+                          "surface_dim": "#071325",
+                          "surface_tint": "#ffb4a3",
+                          "surface_variant": "#2a3548",
+                          "tertiary": "#afcbd7",
+                          "tertiary_container": "#829ea9",
+                          "tertiary_fixed": "#cae7f3",
+                          "tertiary_fixed_dim": "#afcbd7"
+                        },
+                        "overrideNeutralColor": "#0a1628",
+                        "overridePrimaryColor": "#ff6b4a",
+                        "overrideSecondaryColor": "#ffb020",
+                        "overrideTertiaryColor": "#132f38",
+                        "roundness": "ROUND_EIGHT",
+                        "spacing": {
+                          "container-padding": "1.5rem",
+                          "gutter": "1rem",
+                          "stack-lg": "2rem",
+                          "stack-md": "1rem",
+                          "stack-sm": "0.5rem"
+                        },
+                        "spacingScale": 2,
+                        "typography": {
+                          "body-md": {
+                            "fontFamily": "Sora",
+                            "fontSize": "16px",
+                            "fontWeight": "400",
+                            "lineHeight": "24px"
+                          },
+                          "data-lg": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "18px",
+                            "fontWeight": "500",
+                            "lineHeight": "24px"
+                          },
+                          "data-sm": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "12px",
+                            "fontWeight": "400",
+                            "letterSpacing": "0.05em",
+                            "lineHeight": "16px"
+                          },
+                          "display-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "48px",
+                            "fontWeight": "700",
+                            "letterSpacing": "-0.02em",
+                            "lineHeight": "56px"
+                          },
+                          "headline-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "32px",
+                            "fontWeight": "600",
+                            "letterSpacing": "-0.01em",
+                            "lineHeight": "40px"
+                          },
+                          "headline-lg-mobile": {
+                            "fontFamily": "Sora",
+                            "fontSize": "24px",
+                            "fontWeight": "600",
+                            "lineHeight": "32px"
+                          },
+                          "label-caps": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "letterSpacing": "0.1em",
+                            "lineHeight": "12px"
+                          }
+                        }
+                      }
+                    },
+                    "name": "assets/e4da7143410d473883bf445fb24e99e0",
+                    "version": "1"
+                  },
+                  "deviceType": "DESKTOP",
+                  "generatedBy": "figaro_agent",
+                  "height": "2048",
+                  "htmlCode": {
+                    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzE5YjI1MzNkNjRmYjRkZGY5MGZjZTliZWRhYmZmM2UzEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242",
+                    "mimeType": "text/html",
+                    "name": "projects/12970066380241966656/files/82c1a377268846bbaaf1113468b25487"
+                  },
+                  "id": "805744cfdab54747bd19faa4bd3cbc0c",
+                  "name": "projects/12970066380241966656/screens/805744cfdab54747bd19faa4bd3cbc0c",
+                  "prompt": "PAGE 3 — TEAM & SETTINGS PANEL:\nEnterprise-grade management and configuration.\n- Layout: Standard settings sidebar and main content area.\n- Sections: User Management (Team list), Billing Status (Current plan, usage), API Key Matrices (JetBrains Mono for keys), Profile Workflows.\n- Components: rounded-xl cards, p-6 padding, grid-cols-12 layout.\n- Enterprise Features: Embed cascade radar (visualized as a complex list or simplified graph showing Slack/Wiki connections), Unpublish impact preview.\n- Aesthetic: Glassmorphic teal surfaces on navy background.\n- Branding: {{DATA:IMAGE:IMAGE_2}} logo in the header.\n## Available Images\nYou MUST include the following images in this design. You must reference them\nby putting their exact placeholder IDs in `src` attributes or CSS\n`background-image` rules. Do NOT use external URLs or generate new\nplaceholders. Preserve these IDs exactly as written. Read each image's\nDescription to understand its subject, intended section, and visual role.\n\n- {{DATA:IMAGE:IMAGE_2}}\n  Alt Text: ClipForge Logo\n  Description: Brand logo. - Primary color: #ff6b4a\n- Font: sora\n- Mode: dark\n- Roundness: rounded-md\n\n  Dimensions: 200x200\n  Aspect Ratio: 1.00\n  Colors: #0A1628, #FF6B4A, #FFB020\n",
+                  "screenMetadata": {
+                    "agentType": "PRO_AGENT",
+                    "status": "COMPLETE"
+                  },
+                  "screenType": "DESIGN",
+                  "screenshot": {
+                    "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLthJHOvc3kxifUTgh3nrR_0CW_vlvSooPJyB7WtVsnP7gmVudIZtV0YnH1pUOEcsjD6LvyCPNKtqJ04O9n1JIYmU2BT3Ho5YBWMq5cInF_m5f9RT40SCUCnB9V0eyAdDOTG-ee3M53QanbYI4MrDABxLVHmqeLCRfCKGK9JVLBpLjiCMz58Xsg_iAKsFjKfE3IQ8jhCoeSko3YlmyFJcSDlFsZigfh2LyzIpFSug2ncQaDDmcn3dZr9OfYV",
+                    "name": "projects/12970066380241966656/files/fa9d722941f44b9c9cd297aed9d8e218"
+                  },
+                  "theme": {
+                    "bodyFont": "SORA",
+                    "bodyFontFamily": "Sora",
+                    "colorMode": "DARK",
+                    "colorVariant": "FIDELITY",
+                    "customColor": "#ff6b4a",
+                    "font": "SORA",
+                    "headlineFont": "SORA",
+                    "headlineFontFamily": "Sora",
+                    "labelFont": "JETBRAINS_MONO",
+                    "labelFontFamily": "Jetbrains Mono",
+                    "namedColors": {
+                      "background": "#071325",
+                      "error": "#ffb4ab",
+                      "error_container": "#93000a",
+                      "inverse_on_surface": "#253144",
+                      "inverse_primary": "#ae3115",
+                      "inverse_surface": "#d7e3fc",
+                      "on_background": "#d7e3fc",
+                      "on_error": "#690005",
+                      "on_error_container": "#ffdad6",
+                      "on_primary": "#630f00",
+                      "on_primary_container": "#661000",
+                      "on_primary_fixed": "#3d0600",
+                      "on_primary_fixed_variant": "#8c1900",
+                      "on_secondary": "#442b00",
+                      "on_secondary_container": "#5b3b00",
+                      "on_secondary_fixed": "#291800",
+                      "on_secondary_fixed_variant": "#624000",
+                      "on_surface": "#d7e3fc",
+                      "on_surface_variant": "#e1bfb8",
+                      "on_tertiary": "#18343d",
+                      "on_tertiary_container": "#1a353e",
+                      "on_tertiary_fixed": "#011f27",
+                      "on_tertiary_fixed_variant": "#304b54",
+                      "outline": "#a88a83",
+                      "outline_variant": "#59413c",
+                      "primary": "#ffb4a3",
+                      "primary_container": "#ff6b4a",
+                      "primary_fixed": "#ffdad2",
+                      "primary_fixed_dim": "#ffb4a3",
+                      "secondary": "#ffbd58",
+                      "secondary_container": "#ea9f00",
+                      "secondary_fixed": "#ffddb1",
+                      "secondary_fixed_dim": "#ffba4b",
+                      "surface": "#071325",
+                      "surface_bright": "#2e394d",
+                      "surface_container": "#142032",
+                      "surface_container_high": "#1f2a3d",
+                      "surface_container_highest": "#2a3548",
+                      "surface_container_low": "#101c2e",
+                      "surface_container_lowest": "#030e20",
+                      "surface_dim": "#071325",
+                      "surface_tint": "#ffb4a3",
+                      "surface_variant": "#2a3548",
+                      "tertiary": "#afcbd7",
+                      "tertiary_container": "#829ea9",
+                      "tertiary_fixed": "#cae7f3",
+                      "tertiary_fixed_dim": "#afcbd7"
+                    },
+                    "overrideNeutralColor": "#0a1628",
+                    "overridePrimaryColor": "#ff6b4a",
+                    "overrideSecondaryColor": "#ffb020",
+                    "overrideTertiaryColor": "#132f38",
+                    "roundness": "ROUND_EIGHT",
+                    "spacing": {
+                      "container-padding": "1.5rem",
+                      "gutter": "1rem",
+                      "stack-lg": "2rem",
+                      "stack-md": "1rem",
+                      "stack-sm": "0.5rem"
+                    },
+                    "spacingScale": 2,
+                    "typography": {
+                      "body-md": {
+                        "fontFamily": "Sora",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "24px"
+                      },
+                      "data-lg": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "18px",
+                        "fontWeight": "500",
+                        "lineHeight": "24px"
+                      },
+                      "data-sm": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "12px",
+                        "fontWeight": "400",
+                        "letterSpacing": "0.05em",
+                        "lineHeight": "16px"
+                      },
+                      "display-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "48px",
+                        "fontWeight": "700",
+                        "letterSpacing": "-0.02em",
+                        "lineHeight": "56px"
+                      },
+                      "headline-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "32px",
+                        "fontWeight": "600",
+                        "letterSpacing": "-0.01em",
+                        "lineHeight": "40px"
+                      },
+                      "headline-lg-mobile": {
+                        "fontFamily": "Sora",
+                        "fontSize": "24px",
+                        "fontWeight": "600",
+                        "lineHeight": "32px"
+                      },
+                      "label-caps": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "letterSpacing": "0.1em",
+                        "lineHeight": "12px"
+                      }
+                    }
+                  },
+                  "title": "ClipForge Settings & Team",
+                  "width": "2560"
+                },
+                {
+                  "designSystem": {
+                    "designSystem": {
+                      "displayName": "Cinematic Intelligence",
+                      "styleGuidelines": "## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                      "theme": {
+                        "bodyFont": "SORA",
+                        "bodyFontFamily": "Sora",
+                        "colorMode": "DARK",
+                        "colorVariant": "FIDELITY",
+                        "customColor": "#ff6b4a",
+                        "designMd": "---\nname: Cinematic Intelligence\ncolors:\n  surface: '#071325'\n  surface-dim: '#071325'\n  surface-bright: '#2e394d'\n  surface-container-lowest: '#030e20'\n  surface-container-low: '#101c2e'\n  surface-container: '#142032'\n  surface-container-high: '#1f2a3d'\n  surface-container-highest: '#2a3548'\n  on-surface: '#d7e3fc'\n  on-surface-variant: '#e1bfb8'\n  inverse-surface: '#d7e3fc'\n  inverse-on-surface: '#253144'\n  outline: '#a88a83'\n  outline-variant: '#59413c'\n  surface-tint: '#ffb4a3'\n  primary: '#ffb4a3'\n  on-primary: '#630f00'\n  primary-container: '#ff6b4a'\n  on-primary-container: '#661000'\n  inverse-primary: '#ae3115'\n  secondary: '#ffbd58'\n  on-secondary: '#442b00'\n  secondary-container: '#ea9f00'\n  on-secondary-container: '#5b3b00'\n  tertiary: '#afcbd7'\n  on-tertiary: '#18343d'\n  tertiary-container: '#829ea9'\n  on-tertiary-container: '#1a353e'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad2'\n  primary-fixed-dim: '#ffb4a3'\n  on-primary-fixed: '#3d0600'\n  on-primary-fixed-variant: '#8c1900'\n  secondary-fixed: '#ffddb1'\n  secondary-fixed-dim: '#ffba4b'\n  on-secondary-fixed: '#291800'\n  on-secondary-fixed-variant: '#624000'\n  tertiary-fixed: '#cae7f3'\n  tertiary-fixed-dim: '#afcbd7'\n  on-tertiary-fixed: '#011f27'\n  on-tertiary-fixed-variant: '#304b54'\n  background: '#071325'\n  on-background: '#d7e3fc'\n  surface-variant: '#2a3548'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-md:\n    fontFamily: Sora\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  data-lg:\n    fontFamily: JetBrains Mono\n    fontSize: 18px\n    fontWeight: '500'\n    lineHeight: 24px\n  data-sm:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 12px\n    letterSpacing: 0.1em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  container-padding: 1.5rem\n  gutter: 1rem\n  stack-sm: 0.5rem\n  stack-md: 1rem\n  stack-lg: 2rem\n---\n\n## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Colors\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \n\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \"Navy\" atmosphere without shifting into pure black/white.\n\n## Typography\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \n\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \"content\" from \"data.\" \n\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Shapes\nThe shape language is **Rounded (12px - 16px)**. This balances the \"sharp\" technical nature of the data with a modern, high-end SaaS feel. \n\n- **Cards & Primary Containers:** `rounded-xl` (16px).\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                        "font": "SORA",
+                        "headlineFont": "SORA",
+                        "headlineFontFamily": "Sora",
+                        "labelFont": "JETBRAINS_MONO",
+                        "labelFontFamily": "Jetbrains Mono",
+                        "namedColors": {
+                          "background": "#071325",
+                          "error": "#ffb4ab",
+                          "error_container": "#93000a",
+                          "inverse_on_surface": "#253144",
+                          "inverse_primary": "#ae3115",
+                          "inverse_surface": "#d7e3fc",
+                          "on_background": "#d7e3fc",
+                          "on_error": "#690005",
+                          "on_error_container": "#ffdad6",
+                          "on_primary": "#630f00",
+                          "on_primary_container": "#661000",
+                          "on_primary_fixed": "#3d0600",
+                          "on_primary_fixed_variant": "#8c1900",
+                          "on_secondary": "#442b00",
+                          "on_secondary_container": "#5b3b00",
+                          "on_secondary_fixed": "#291800",
+                          "on_secondary_fixed_variant": "#624000",
+                          "on_surface": "#d7e3fc",
+                          "on_surface_variant": "#e1bfb8",
+                          "on_tertiary": "#18343d",
+                          "on_tertiary_container": "#1a353e",
+                          "on_tertiary_fixed": "#011f27",
+                          "on_tertiary_fixed_variant": "#304b54",
+                          "outline": "#a88a83",
+                          "outline_variant": "#59413c",
+                          "primary": "#ffb4a3",
+                          "primary_container": "#ff6b4a",
+                          "primary_fixed": "#ffdad2",
+                          "primary_fixed_dim": "#ffb4a3",
+                          "secondary": "#ffbd58",
+                          "secondary_container": "#ea9f00",
+                          "secondary_fixed": "#ffddb1",
+                          "secondary_fixed_dim": "#ffba4b",
+                          "surface": "#071325",
+                          "surface_bright": "#2e394d",
+                          "surface_container": "#142032",
+                          "surface_container_high": "#1f2a3d",
+                          "surface_container_highest": "#2a3548",
+                          "surface_container_low": "#101c2e",
+                          "surface_container_lowest": "#030e20",
+                          "surface_dim": "#071325",
+                          "surface_tint": "#ffb4a3",
+                          "surface_variant": "#2a3548",
+                          "tertiary": "#afcbd7",
+                          "tertiary_container": "#829ea9",
+                          "tertiary_fixed": "#cae7f3",
+                          "tertiary_fixed_dim": "#afcbd7"
+                        },
+                        "overrideNeutralColor": "#0a1628",
+                        "overridePrimaryColor": "#ff6b4a",
+                        "overrideSecondaryColor": "#ffb020",
+                        "overrideTertiaryColor": "#132f38",
+                        "roundness": "ROUND_EIGHT",
+                        "spacing": {
+                          "container-padding": "1.5rem",
+                          "gutter": "1rem",
+                          "stack-lg": "2rem",
+                          "stack-md": "1rem",
+                          "stack-sm": "0.5rem"
+                        },
+                        "spacingScale": 2,
+                        "typography": {
+                          "body-md": {
+                            "fontFamily": "Sora",
+                            "fontSize": "16px",
+                            "fontWeight": "400",
+                            "lineHeight": "24px"
+                          },
+                          "data-lg": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "18px",
+                            "fontWeight": "500",
+                            "lineHeight": "24px"
+                          },
+                          "data-sm": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "12px",
+                            "fontWeight": "400",
+                            "letterSpacing": "0.05em",
+                            "lineHeight": "16px"
+                          },
+                          "display-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "48px",
+                            "fontWeight": "700",
+                            "letterSpacing": "-0.02em",
+                            "lineHeight": "56px"
+                          },
+                          "headline-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "32px",
+                            "fontWeight": "600",
+                            "letterSpacing": "-0.01em",
+                            "lineHeight": "40px"
+                          },
+                          "headline-lg-mobile": {
+                            "fontFamily": "Sora",
+                            "fontSize": "24px",
+                            "fontWeight": "600",
+                            "lineHeight": "32px"
+                          },
+                          "label-caps": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "letterSpacing": "0.1em",
+                            "lineHeight": "12px"
+                          }
+                        }
+                      }
+                    },
+                    "name": "assets/e4da7143410d473883bf445fb24e99e0",
+                    "version": "1"
+                  },
+                  "deviceType": "DESKTOP",
+                  "generatedBy": "figaro_agent",
+                  "height": "2048",
+                  "htmlCode": {
+                    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzU1MGMyYjllZjcyMzRlZTI4ZjZjZTRiMmRkOGViZjkyEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242",
+                    "mimeType": "text/html",
+                    "name": "projects/12970066380241966656/files/24062f5467004e25ae99f69ffca237cc"
+                  },
+                  "id": "3f9be4be5c58480eb74e3b22faa0d4ea",
+                  "name": "projects/12970066380241966656/screens/3f9be4be5c58480eb74e3b22faa0d4ea",
+                  "prompt": "PAGE 1 — MAIN WORKSPACE:\nA high-fidelity async video recording center.\n- Layout: Side navigation, top app bar, and a central recording panel.\n- Left Sidebar: Navigation for Clip Library, Viewer Drop-off Inbox, and Workspace.\n- Center Panel: Large video player/preview for async recording.\n- Right Drawer (Clip Inspector): Detailed inspector for the current clip.\n- Viewer Drop-off Inbox: A list below the player with second-by-second drop-off severity badges (#FF6B4A), rewind hotspot chips, and engagement drift indicators.\n- Auto-Highlight Suggestion Panel: p-6 padding, rounded-xl cards with deep coral accents.\n- Aesthetic: Glassmorphism surfaces, Obsidian Navy #0A1628 background, Obsidian Teal #132F38 cards.\n- Logo: {{DATA:IMAGE:IMAGE_2}}.\n## Available Images\nYou MUST include the following images in this design. You must reference them\nby putting their exact placeholder IDs in `src` attributes or CSS\n`background-image` rules. Do NOT use external URLs or generate new\nplaceholders. Preserve these IDs exactly as written. Read each image's\nDescription to understand its subject, intended section, and visual role.\n\n- {{DATA:IMAGE:IMAGE_2}}\n  Alt Text: ClipForge Logo\n  Description: Brand logo. - Primary color: #ff6b4a\n- Font: sora\n- Mode: dark\n- Roundness: rounded-md\n\n  Dimensions: 200x200\n  Aspect Ratio: 1.00\n  Colors: #0A1628, #FF6B4A, #FFB020\n",
+                  "screenMetadata": {
+                    "agentType": "PRO_AGENT",
+                    "status": "COMPLETE"
+                  },
+                  "screenType": "DESIGN",
+                  "screenshot": {
+                    "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLt-Y4iG5ulnNd_mHoG9mqfDWEGbK7VH55tGIlJGMfNJVv9fC3b-Eyb43795hMAVnMiOac30AilM5NDM2kTI-jJ5CtrCYBa5zfCd6X75n3R4VtO0iBvslWrQC1_U8FcfXanebgmTLzwLRZdWqPBggU18RgMEgBShwkXXigan8xXJIXwrjMtpjSv25za6gyziLbNXKT9h4Z4pCdz9mxrAG4sXvgZl2-k0pe-mq-hjYeqLid03Aaj_d2vAWRBs",
+                    "name": "projects/12970066380241966656/files/2316a5b74fea4788ab6bef031cd0c1db"
+                  },
+                  "theme": {
+                    "bodyFont": "SORA",
+                    "bodyFontFamily": "Sora",
+                    "colorMode": "DARK",
+                    "colorVariant": "FIDELITY",
+                    "customColor": "#ff6b4a",
+                    "font": "SORA",
+                    "headlineFont": "SORA",
+                    "headlineFontFamily": "Sora",
+                    "labelFont": "JETBRAINS_MONO",
+                    "labelFontFamily": "Jetbrains Mono",
+                    "namedColors": {
+                      "background": "#071325",
+                      "error": "#ffb4ab",
+                      "error_container": "#93000a",
+                      "inverse_on_surface": "#253144",
+                      "inverse_primary": "#ae3115",
+                      "inverse_surface": "#d7e3fc",
+                      "on_background": "#d7e3fc",
+                      "on_error": "#690005",
+                      "on_error_container": "#ffdad6",
+                      "on_primary": "#630f00",
+                      "on_primary_container": "#661000",
+                      "on_primary_fixed": "#3d0600",
+                      "on_primary_fixed_variant": "#8c1900",
+                      "on_secondary": "#442b00",
+                      "on_secondary_container": "#5b3b00",
+                      "on_secondary_fixed": "#291800",
+                      "on_secondary_fixed_variant": "#624000",
+                      "on_surface": "#d7e3fc",
+                      "on_surface_variant": "#e1bfb8",
+                      "on_tertiary": "#18343d",
+                      "on_tertiary_container": "#1a353e",
+                      "on_tertiary_fixed": "#011f27",
+                      "on_tertiary_fixed_variant": "#304b54",
+                      "outline": "#a88a83",
+                      "outline_variant": "#59413c",
+                      "primary": "#ffb4a3",
+                      "primary_container": "#ff6b4a",
+                      "primary_fixed": "#ffdad2",
+                      "primary_fixed_dim": "#ffb4a3",
+                      "secondary": "#ffbd58",
+                      "secondary_container": "#ea9f00",
+                      "secondary_fixed": "#ffddb1",
+                      "secondary_fixed_dim": "#ffba4b",
+                      "surface": "#071325",
+                      "surface_bright": "#2e394d",
+                      "surface_container": "#142032",
+                      "surface_container_high": "#1f2a3d",
+                      "surface_container_highest": "#2a3548",
+                      "surface_container_low": "#101c2e",
+                      "surface_container_lowest": "#030e20",
+                      "surface_dim": "#071325",
+                      "surface_tint": "#ffb4a3",
+                      "surface_variant": "#2a3548",
+                      "tertiary": "#afcbd7",
+                      "tertiary_container": "#829ea9",
+                      "tertiary_fixed": "#cae7f3",
+                      "tertiary_fixed_dim": "#afcbd7"
+                    },
+                    "overrideNeutralColor": "#0a1628",
+                    "overridePrimaryColor": "#ff6b4a",
+                    "overrideSecondaryColor": "#ffb020",
+                    "overrideTertiaryColor": "#132f38",
+                    "roundness": "ROUND_EIGHT",
+                    "spacing": {
+                      "container-padding": "1.5rem",
+                      "gutter": "1rem",
+                      "stack-lg": "2rem",
+                      "stack-md": "1rem",
+                      "stack-sm": "0.5rem"
+                    },
+                    "spacingScale": 2,
+                    "typography": {
+                      "body-md": {
+                        "fontFamily": "Sora",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "24px"
+                      },
+                      "data-lg": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "18px",
+                        "fontWeight": "500",
+                        "lineHeight": "24px"
+                      },
+                      "data-sm": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "12px",
+                        "fontWeight": "400",
+                        "letterSpacing": "0.05em",
+                        "lineHeight": "16px"
+                      },
+                      "display-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "48px",
+                        "fontWeight": "700",
+                        "letterSpacing": "-0.02em",
+                        "lineHeight": "56px"
+                      },
+                      "headline-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "32px",
+                        "fontWeight": "600",
+                        "letterSpacing": "-0.01em",
+                        "lineHeight": "40px"
+                      },
+                      "headline-lg-mobile": {
+                        "fontFamily": "Sora",
+                        "fontSize": "24px",
+                        "fontWeight": "600",
+                        "lineHeight": "32px"
+                      },
+                      "label-caps": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "letterSpacing": "0.1em",
+                        "lineHeight": "12px"
+                      }
+                    }
+                  },
+                  "title": "ClipForge Workspace",
+                  "width": "2560"
+                },
+                {
+                  "designSystem": {
+                    "designSystem": {
+                      "displayName": "Cinematic Intelligence",
+                      "styleGuidelines": "## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                      "theme": {
+                        "bodyFont": "SORA",
+                        "bodyFontFamily": "Sora",
+                        "colorMode": "DARK",
+                        "colorVariant": "FIDELITY",
+                        "customColor": "#ff6b4a",
+                        "designMd": "---\nname: Cinematic Intelligence\ncolors:\n  surface: '#071325'\n  surface-dim: '#071325'\n  surface-bright: '#2e394d'\n  surface-container-lowest: '#030e20'\n  surface-container-low: '#101c2e'\n  surface-container: '#142032'\n  surface-container-high: '#1f2a3d'\n  surface-container-highest: '#2a3548'\n  on-surface: '#d7e3fc'\n  on-surface-variant: '#e1bfb8'\n  inverse-surface: '#d7e3fc'\n  inverse-on-surface: '#253144'\n  outline: '#a88a83'\n  outline-variant: '#59413c'\n  surface-tint: '#ffb4a3'\n  primary: '#ffb4a3'\n  on-primary: '#630f00'\n  primary-container: '#ff6b4a'\n  on-primary-container: '#661000'\n  inverse-primary: '#ae3115'\n  secondary: '#ffbd58'\n  on-secondary: '#442b00'\n  secondary-container: '#ea9f00'\n  on-secondary-container: '#5b3b00'\n  tertiary: '#afcbd7'\n  on-tertiary: '#18343d'\n  tertiary-container: '#829ea9'\n  on-tertiary-container: '#1a353e'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdad2'\n  primary-fixed-dim: '#ffb4a3'\n  on-primary-fixed: '#3d0600'\n  on-primary-fixed-variant: '#8c1900'\n  secondary-fixed: '#ffddb1'\n  secondary-fixed-dim: '#ffba4b'\n  on-secondary-fixed: '#291800'\n  on-secondary-fixed-variant: '#624000'\n  tertiary-fixed: '#cae7f3'\n  tertiary-fixed-dim: '#afcbd7'\n  on-tertiary-fixed: '#011f27'\n  on-tertiary-fixed-variant: '#304b54'\n  background: '#071325'\n  on-background: '#d7e3fc'\n  surface-variant: '#2a3548'\ntypography:\n  display-lg:\n    fontFamily: Sora\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 56px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Sora\n    fontSize: 32px\n    fontWeight: '600'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Sora\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 32px\n  body-md:\n    fontFamily: Sora\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  data-lg:\n    fontFamily: JetBrains Mono\n    fontSize: 18px\n    fontWeight: '500'\n    lineHeight: 24px\n  data-sm:\n    fontFamily: JetBrains Mono\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: JetBrains Mono\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 12px\n    letterSpacing: 0.1em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  container-padding: 1.5rem\n  gutter: 1rem\n  stack-sm: 0.5rem\n  stack-md: 1rem\n  stack-lg: 2rem\n---\n\n## Brand & Style\nThe design system is engineered for ClipForge, a high-performance async video intelligence platform. The visual narrative shifts away from the sterile \"SaaS-blue\" aesthetic toward a cinematic, immersive environment that reflects the depth of video data. \n\nThe personality is **authoritative, technical, and high-fidelity**. By leveraging a dark-first approach with high-contrast accents, the UI directs focus to video content and data visualizations. The style is a hybrid of **Glassmorphism** and **Corporate Modern**, utilizing frosted surfaces and deep obsidian tones to create a sense of infinite digital space. It evokes an emotional response of precision and \"Mission Control\" level oversight.\n\n## Colors\nThe palette is rooted in **Obsidian Navy (#0A1628)** to provide a stable, deep background that reduces eye strain during long video analysis sessions. \n\n- **Primary Accent (Deep Coral - #FF6B4A):** Reserved for high-impact actions, critical drop-off points in video heatmaps, and destructive operations. \n- **Secondary Accent (Electric Amber - #FFB020):** Used for engagement spikes, warnings, and highlighting AI-detected insights.\n- **Obsidian Teal Glass (#132F38):** The primary surface color, applied with 60-80% opacity to create layered depth.\n- **Neutral Grays:** Use cool-tinted grays for secondary text to maintain the \"Navy\" atmosphere without shifting into pure black/white.\n\n## Typography\nThe system utilizes **Sora** for its technical yet approachable geometric structure, making it ideal for headings and primary UI navigation. \n\n**JetBrains Mono** is employed for all data-heavy contexts: timestamps, sentiment scores, engagement metrics, and technical metadata. This distinction ensures users mentally separate \"content\" from \"data.\" \n\nFor Turkish localization, pay close attention to the dotless 'i' and uppercase 'İ'; Sora handles these glyphs with excellent clarity. Maintain tight letter-spacing for headlines to reinforce the premium, cinematic feel.\n\n## Layout & Spacing\nThis design system uses a **12-column fluid grid** for desktop, collapsing to 6 columns for tablet and 4 columns for mobile. \n\n- **Standard Padding:** A base unit of `p-6 (24px)` is used for all main containers and dashboard cards to provide breathing room for complex data.\n- **Rhythm:** Use a 4px/8px incremental scale for internal component spacing.\n- **Data Grids:** Metrics cards should be aligned to a strict grid. In \"Dense Mode,\" padding can be reduced to `p-4` to increase data density without sacrificing readability.\n\n## Elevation & Depth\nDepth is created through **Glassmorphism** rather than traditional drop shadows. \n\n1.  **Level 0 (Base):** Obsidian Navy background.\n2.  **Level 1 (Cards):** Obsidian Teal Glass with a `16px` backdrop blur and a `1px` inner stroke (white at 10% opacity) to simulate a light-catching edge.\n3.  **Level 2 (Modals/Popovers):** Higher opacity Teal Glass with a subtle ambient shadow: `0px 20px 40px rgba(0, 0, 0, 0.4)`.\n\nAvoid high-contrast outer shadows; instead, use brightness adjustments on the surface color to indicate \"lift.\"\n\n## Shapes\nThe shape language is **Rounded (12px - 16px)**. This balances the \"sharp\" technical nature of the data with a modern, high-end SaaS feel. \n\n- **Cards & Primary Containers:** `rounded-xl` (16px).\n- **Buttons & Input Fields:** `rounded-lg` (8px - 12px).\n- **Status Badges:** `rounded-full` (Pill-shaped) to distinguish them from interactive buttons.\n- **Heatmap Elements:** `rounded-sm` (4px) to maintain precision in dense visualizations.\n\n## Components\n- **Glass Surfaces:** All cards must use `backdrop-filter: blur(16px)` with a subtle border using `rgba(255, 255, 255, 0.1)`.\n- **Primary Buttons:** High-impact actions use the Deep Coral (#FF6B4A) background with white text. Hover states should use a 200ms transition to a slightly brighter saturation.\n- **Severity Badges:** \n    - *Critical:* Deep Coral background, subtle white text.\n    - *Insight/Warning:* Electric Amber background, dark navy text.\n- **Enterprise Badges:** \n    - *Starter:* Transparent with white border.\n    - *Pro:* Electric Amber border/text.\n    - *Enterprise:* Deep Coral gradient border.\n- **Metrics Grids:** Use JetBrains Mono for numbers. Large metrics should be bold and high-contrast, while labels use `label-caps` typography in a muted gray.\n- **Heatmaps:** Use a gradient ramp from Obsidian Teal (low) to Electric Amber (medium) to Deep Coral (peak intensity).",
+                        "font": "SORA",
+                        "headlineFont": "SORA",
+                        "headlineFontFamily": "Sora",
+                        "labelFont": "JETBRAINS_MONO",
+                        "labelFontFamily": "Jetbrains Mono",
+                        "namedColors": {
+                          "background": "#071325",
+                          "error": "#ffb4ab",
+                          "error_container": "#93000a",
+                          "inverse_on_surface": "#253144",
+                          "inverse_primary": "#ae3115",
+                          "inverse_surface": "#d7e3fc",
+                          "on_background": "#d7e3fc",
+                          "on_error": "#690005",
+                          "on_error_container": "#ffdad6",
+                          "on_primary": "#630f00",
+                          "on_primary_container": "#661000",
+                          "on_primary_fixed": "#3d0600",
+                          "on_primary_fixed_variant": "#8c1900",
+                          "on_secondary": "#442b00",
+                          "on_secondary_container": "#5b3b00",
+                          "on_secondary_fixed": "#291800",
+                          "on_secondary_fixed_variant": "#624000",
+                          "on_surface": "#d7e3fc",
+                          "on_surface_variant": "#e1bfb8",
+                          "on_tertiary": "#18343d",
+                          "on_tertiary_container": "#1a353e",
+                          "on_tertiary_fixed": "#011f27",
+                          "on_tertiary_fixed_variant": "#304b54",
+                          "outline": "#a88a83",
+                          "outline_variant": "#59413c",
+                          "primary": "#ffb4a3",
+                          "primary_container": "#ff6b4a",
+                          "primary_fixed": "#ffdad2",
+                          "primary_fixed_dim": "#ffb4a3",
+                          "secondary": "#ffbd58",
+                          "secondary_container": "#ea9f00",
+                          "secondary_fixed": "#ffddb1",
+                          "secondary_fixed_dim": "#ffba4b",
+                          "surface": "#071325",
+                          "surface_bright": "#2e394d",
+                          "surface_container": "#142032",
+                          "surface_container_high": "#1f2a3d",
+                          "surface_container_highest": "#2a3548",
+                          "surface_container_low": "#101c2e",
+                          "surface_container_lowest": "#030e20",
+                          "surface_dim": "#071325",
+                          "surface_tint": "#ffb4a3",
+                          "surface_variant": "#2a3548",
+                          "tertiary": "#afcbd7",
+                          "tertiary_container": "#829ea9",
+                          "tertiary_fixed": "#cae7f3",
+                          "tertiary_fixed_dim": "#afcbd7"
+                        },
+                        "overrideNeutralColor": "#0a1628",
+                        "overridePrimaryColor": "#ff6b4a",
+                        "overrideSecondaryColor": "#ffb020",
+                        "overrideTertiaryColor": "#132f38",
+                        "roundness": "ROUND_EIGHT",
+                        "spacing": {
+                          "container-padding": "1.5rem",
+                          "gutter": "1rem",
+                          "stack-lg": "2rem",
+                          "stack-md": "1rem",
+                          "stack-sm": "0.5rem"
+                        },
+                        "spacingScale": 2,
+                        "typography": {
+                          "body-md": {
+                            "fontFamily": "Sora",
+                            "fontSize": "16px",
+                            "fontWeight": "400",
+                            "lineHeight": "24px"
+                          },
+                          "data-lg": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "18px",
+                            "fontWeight": "500",
+                            "lineHeight": "24px"
+                          },
+                          "data-sm": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "12px",
+                            "fontWeight": "400",
+                            "letterSpacing": "0.05em",
+                            "lineHeight": "16px"
+                          },
+                          "display-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "48px",
+                            "fontWeight": "700",
+                            "letterSpacing": "-0.02em",
+                            "lineHeight": "56px"
+                          },
+                          "headline-lg": {
+                            "fontFamily": "Sora",
+                            "fontSize": "32px",
+                            "fontWeight": "600",
+                            "letterSpacing": "-0.01em",
+                            "lineHeight": "40px"
+                          },
+                          "headline-lg-mobile": {
+                            "fontFamily": "Sora",
+                            "fontSize": "24px",
+                            "fontWeight": "600",
+                            "lineHeight": "32px"
+                          },
+                          "label-caps": {
+                            "fontFamily": "JetBrains Mono",
+                            "fontSize": "10px",
+                            "fontWeight": "700",
+                            "letterSpacing": "0.1em",
+                            "lineHeight": "12px"
+                          }
+                        }
+                      }
+                    },
+                    "name": "assets/e4da7143410d473883bf445fb24e99e0",
+                    "version": "1"
+                  },
+                  "deviceType": "DESKTOP",
+                  "generatedBy": "figaro_agent",
+                  "height": "2096",
+                  "htmlCode": {
+                    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzJjN2EzNGNmNzYzZjQ2OWU4MzczZjI5OGVlMzgzZGUyEgsSBxCX08aC_BwYAZIBJAoKcHJvamVjdF9pZBIWQhQxMjk3MDA2NjM4MDI0MTk2NjY1Ng&filename=&opi=96797242",
+                    "mimeType": "text/html",
+                    "name": "projects/12970066380241966656/files/0177042fb11d4f29ad0aecc61e0e27ab"
+                  },
+                  "id": "8036b0cd6cac40f5a4a60fc303fd73be",
+                  "name": "projects/12970066380241966656/screens/8036b0cd6cac40f5a4a60fc303fd73be",
+                  "prompt": "PAGE 2 — METRICS DASHBOARD:\nData-dense analytics for video intelligence.\n- High-Density Viewer Drop-off Heatmap: grid-cols-12 layout showing cell-based engagement.\n- Engagement Impact Score Charts: Trend lines and bar graphs using Sora for titles and JetBrains Mono for metrics.\n- Heatmap Grid Cells: Color scale from deep coral (#FF6B4A) to electric amber (#FFB020).\n- Monetization Tier Indicators: Badges for Starter, Pro, and Enterprise.\n- Reporting Grids: Clean, high-density data tables for viewer sessions and drop-off timestamps.\n- Aesthetic: Obsidian Navy base with glowing amber and coral accents.\n- Interaction: duration-200 hover transitions on heatmap cells showing detailed tooltips.",
+                  "screenMetadata": {
+                    "agentType": "PRO_AGENT",
+                    "status": "COMPLETE"
+                  },
+                  "screenType": "DESIGN",
+                  "screenshot": {
+                    "downloadUrl": "https://lh3.googleusercontent.com/aida/AP1WRLtrQgyeroq1EJmMRyv_obbMg5zRSPLedBouRdj9zmr59FdD9wWaYDHvdOgbg6oaXJ3W_YXeuZYUI6dYJjdws7yLoaGnfiwbexx6YNEQbgrOAR_55yrt4CqfZJEYzPwNnup2vY8nGzwSx_yUC8JHDOMxrjJe-YRofQo-jco6ulMKtbe6k8qSxiJTmd9PU3rCWc9kUO29n9LALaF_zmU5Jpxt6wVvJmJ-FrLlSZkjNyi7hwrlUmNyzFsVt5f5",
+                    "name": "projects/12970066380241966656/files/80b259b030f7416c88d186e3b9625863"
+                  },
+                  "theme": {
+                    "bodyFont": "SORA",
+                    "bodyFontFamily": "Sora",
+                    "colorMode": "DARK",
+                    "colorVariant": "FIDELITY",
+                    "customColor": "#ff6b4a",
+                    "font": "SORA",
+                    "headlineFont": "SORA",
+                    "headlineFontFamily": "Sora",
+                    "labelFont": "JETBRAINS_MONO",
+                    "labelFontFamily": "Jetbrains Mono",
+                    "namedColors": {
+                      "background": "#071325",
+                      "error": "#ffb4ab",
+                      "error_container": "#93000a",
+                      "inverse_on_surface": "#253144",
+                      "inverse_primary": "#ae3115",
+                      "inverse_surface": "#d7e3fc",
+                      "on_background": "#d7e3fc",
+                      "on_error": "#690005",
+                      "on_error_container": "#ffdad6",
+                      "on_primary": "#630f00",
+                      "on_primary_container": "#661000",
+                      "on_primary_fixed": "#3d0600",
+                      "on_primary_fixed_variant": "#8c1900",
+                      "on_secondary": "#442b00",
+                      "on_secondary_container": "#5b3b00",
+                      "on_secondary_fixed": "#291800",
+                      "on_secondary_fixed_variant": "#624000",
+                      "on_surface": "#d7e3fc",
+                      "on_surface_variant": "#e1bfb8",
+                      "on_tertiary": "#18343d",
+                      "on_tertiary_container": "#1a353e",
+                      "on_tertiary_fixed": "#011f27",
+                      "on_tertiary_fixed_variant": "#304b54",
+                      "outline": "#a88a83",
+                      "outline_variant": "#59413c",
+                      "primary": "#ffb4a3",
+                      "primary_container": "#ff6b4a",
+                      "primary_fixed": "#ffdad2",
+                      "primary_fixed_dim": "#ffb4a3",
+                      "secondary": "#ffbd58",
+                      "secondary_container": "#ea9f00",
+                      "secondary_fixed": "#ffddb1",
+                      "secondary_fixed_dim": "#ffba4b",
+                      "surface": "#071325",
+                      "surface_bright": "#2e394d",
+                      "surface_container": "#142032",
+                      "surface_container_high": "#1f2a3d",
+                      "surface_container_highest": "#2a3548",
+                      "surface_container_low": "#101c2e",
+                      "surface_container_lowest": "#030e20",
+                      "surface_dim": "#071325",
+                      "surface_tint": "#ffb4a3",
+                      "surface_variant": "#2a3548",
+                      "tertiary": "#afcbd7",
+                      "tertiary_container": "#829ea9",
+                      "tertiary_fixed": "#cae7f3",
+                      "tertiary_fixed_dim": "#afcbd7"
+                    },
+                    "overrideNeutralColor": "#0a1628",
+                    "overridePrimaryColor": "#ff6b4a",
+                    "overrideSecondaryColor": "#ffb020",
+                    "overrideTertiaryColor": "#132f38",
+                    "roundness": "ROUND_EIGHT",
+                    "spacing": {
+                      "container-padding": "1.5rem",
+                      "gutter": "1rem",
+                      "stack-lg": "2rem",
+                      "stack-md": "1rem",
+                      "stack-sm": "0.5rem"
+                    },
+                    "spacingScale": 2,
+                    "typography": {
+                      "body-md": {
+                        "fontFamily": "Sora",
+                        "fontSize": "16px",
+                        "fontWeight": "400",
+                        "lineHeight": "24px"
+                      },
+                      "data-lg": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "18px",
+                        "fontWeight": "500",
+                        "lineHeight": "24px"
+                      },
+                      "data-sm": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "12px",
+                        "fontWeight": "400",
+                        "letterSpacing": "0.05em",
+                        "lineHeight": "16px"
+                      },
+                      "display-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "48px",
+                        "fontWeight": "700",
+                        "letterSpacing": "-0.02em",
+                        "lineHeight": "56px"
+                      },
+                      "headline-lg": {
+                        "fontFamily": "Sora",
+                        "fontSize": "32px",
+                        "fontWeight": "600",
+                        "letterSpacing": "-0.01em",
+                        "lineHeight": "40px"
+                      },
+                      "headline-lg-mobile": {
+                        "fontFamily": "Sora",
+                        "fontSize": "24px",
+                        "fontWeight": "600",
+                        "lineHeight": "32px"
+                      },
+                      "label-caps": {
+                        "fontFamily": "JetBrains Mono",
+                        "fontSize": "10px",
+                        "fontWeight": "700",
+                        "letterSpacing": "0.1em",
+                        "lineHeight": "12px"
+                      }
+                    }
+                  },
+                  "title": "ClipForge Metrics Dashboard",
+                  "width": "2560"
+                }
+              ],
+              "theme": {}
+            }
+          },
+          {
+            "text": "I have designed the 'ClipForge' platform, a premium Turkish-first async video intelligence suite. The system follows an \"Obsidian Cinematic\" aesthetic, utilizing a dark-first palette of Obsidian Navy and Teal with high-energy Deep Coral and Electric Amber accents for critical data visualization.\n\n### Design Breakdown\n\n*   **Design System (`[Design_System]`)**: Established a high-fidelity foundation using **Sora** for UI and **JetBrains Mono** for data precision. The system enforces `p-6` padding, `rounded-xl` corners, and glassmorphic surface treatments.\n*   **Main Workspace (`ClipForge Workspace`)**: A command center featuring a clip inspector drawer, a central recording preview, and the **Viewer Drop-off Inbox**. I've integrated second-by-second drop-off severity badges and rewind hotspot chips to help teams pinpoint exactly where engagement drifts.\n*   **Metrics Dashboard (`ClipForge Metrics Dashboard`)**: A high-density data view featuring a **12-column heatmap grid**. Engagement impact is visualized through a color scale from Deep Coral to Electric Amber, allowing for instant identification of segment \"blast radius.\"\n*   **Settings & Team (`ClipForge Settings & Team`)**: An enterprise-grade management panel covering user roles, billing, and API key matrices. I've also included space for the **Embed Cascade Radar** to preview the impact of unpublishing clips across connected platforms like Slack and Wiki docs.\n\nThe brand identity is anchored by the custom-designed **ClipForge Logo** (`ClipForge Logo`), which mirrors the cinematic glow of the platform.\n\nHow would you like to refine the intelligence rules or the heatmap density?"
+          },
+          {
+            "suggestion": "Add the 'Embed Cascade Radar' visual graph to settings"
+          },
+          {
+            "suggestion": "Refine the Viewer Drop-off Inbox with more rule filters"
+          },
+          {
+            "suggestion": "Create a 'Pro' tier variant of the dashboard"
+          }
+        ],
+        "projectId": "12970066380241966656",
+        "sessionId": "102506233051428393"
+      }
+    }
+  },
+  "designSystem": {
+    "error": {
+      "code": -32602,
+      "message": "Tools Call name is not found in the list of tools"
+    },
+    "id": 4,
+    "jsonrpc": "2.0"
+  },
+  "colors": {
+    "background": "#0A1628",
+    "surface": "#132F38",
+    "accent": "#FF6B4A",
+    "secondary": "#FFB020"
+  },
+  "theme": "Obsidian Teal & Deep Coral"
+}

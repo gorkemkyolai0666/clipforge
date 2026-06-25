@@ -1,0 +1,130 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: clipforge
+          POSTGRES_PASSWORD: clipforge123
+          POSTGRES_DB: clipforge
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm install --legacy-peer-deps
+
+      - name: Sanitize Prisma migrations
+        run: python3 scripts/sanitize-prisma-migrations.py backend/prisma/migrations
+
+      - name: Run migrations and seed
+        working-directory: backend
+        env:
+          DATABASE_URL: postgresql://clipforge:clipforge123@localhost:5432/clipforge?schema=public
+        run: |
+          npx prisma migrate deploy
+          npx prisma db seed
+
+      - name: Build backend
+        working-directory: backend
+        run: npm run build
+
+      - name: Run unit tests
+        working-directory: backend
+        run: npm test
+
+      - name: Start API and run integration tests
+        env:
+          DATABASE_URL: postgresql://clipforge:clipforge123@localhost:5432/clipforge?schema=public
+          JWT_SECRET: clipforge-ci-secret
+          PORT: 5170
+          API_URL: http://localhost:5170/api
+        run: |
+          cd backend && npm run start:prod &
+          sleep 5
+          API_URL=http://localhost:5170/api bash tests/integration.sh
+
+  frontend:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install frontend dependencies
+        working-directory: frontend
+        run: npm install
+
+      - name: Build frontend
+        working-directory: frontend
+        env:
+          NEXT_PUBLIC_API_URL: http://localhost:5170/api
+        run: npm run build
+
+  provision:
+    needs: [backend, frontend]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install root dependencies
+        run: npm install
+
+      - name: Reset stale Railway config
+        run: rm -rf backend/.railway
+
+      - name: Verify deployment secrets
+        run: |
+          test -n "${{ secrets.GH_PAT }}" && echo "GH_PAT=true" || echo "GH_PAT=false"
+          test -n "${{ secrets.RAILWAY_API_TOKEN }}" && echo "RAILWAY_API_TOKEN=true" || echo "RAILWAY_API_TOKEN=false"
+          test -n "${{ secrets.VERCEL_TOKEN }}" && echo "VERCEL_TOKEN=true" || echo "VERCEL_TOKEN=false"
+
+      - name: Provision infrastructure
+        env:
+          PROJECT_NAME: ${{ github.event.repository.name }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          RAILWAY_API_TOKEN: ${{ secrets.RAILWAY_API_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+        run: npm run provision

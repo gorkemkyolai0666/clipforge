@@ -1,0 +1,90 @@
+{
+  "displayName": "ProductName",
+  "projectSlug": "productname",
+  "tokenKey": "productname_token",
+  "userKey": "productname_user",
+  "themeKey": "productname_theme",
+  "demoEmail": "demo@productname.com.tr",
+  "companyName": "Şirket A.Ş.",
+  "tagline": "Premium Akıl",
+  "meta": {
+    "title": "ProductName — Yapay Zeka Destekli Platform",
+    "description": "Ürün açıklaması — Stitch design system ile uyumlu Türkçe SaaS."
+  },
+  "landing": {
+    "heroBadge": "Rakip kalitesinde, intelligence ile",
+    "heroTitlePrefix": "Ekipler için",
+    "heroHighlight": "conflict-aware",
+    "heroTitleSuffix": "platform yönetimi",
+    "heroSubtitle": "Ürün özelliklerinin kısa açıklaması. Tam Türkçe arayüz, gerçek zamanlı işbirliği.",
+    "featuresSectionTitle": "Rakibi aşan üç mutasyon",
+    "featuresSectionSubtitle": "Built-in intelligence, harici eklenti gerektirmez.",
+    "features": [
+      { "icon": "Sparkles", "title": "Özellik 1", "desc": "Açıklama 1" },
+      { "icon": "TrendingUp", "title": "Özellik 2", "desc": "Açıklama 2" },
+      { "icon": "GitBranch", "title": "Özellik 3", "desc": "Açıklama 3" }
+    ],
+    "plans": [
+      {
+        "name": "Başlangıç",
+        "price": "Ücretsiz",
+        "period": "",
+        "highlight": false,
+        "items": ["Temel özellik 1", "Temel özellik 2"]
+      },
+      {
+        "name": "Pro",
+        "price": "₺549",
+        "period": "/ay",
+        "highlight": true,
+        "items": ["Pro özellik 1", "Pro özellik 2"]
+      }
+    ]
+  },
+  "sidebar": {
+    "primaryAction": "Yeni Öğe",
+    "navItems": [
+      { "href": "/dashboard", "label": "Ana Liste", "icon": "FileText", "badge": false },
+      { "href": "/dashboard/triage", "label": "Gelen Kutusu", "icon": "Inbox", "badge": true }
+    ],
+    "bottomItems": [
+      { "href": "/dashboard/settings", "label": "Ayarlar", "icon": "Settings" },
+      { "href": "/dashboard/team", "label": "Yardım", "icon": "HelpCircle" }
+    ]
+  },
+  "workspace": {
+    "documentTitle": "Ana Workspace Belge Başlığı",
+    "presenceText": "Kullanıcı düzenliyor…",
+    "paragraphs": [
+      "Birinci paragraf — ürün mimarisi açıklaması.",
+      "İkinci paragraf — teknik detaylar."
+    ],
+    "codeSnippet": "function example() { return true; }",
+    "conflictInbox": {
+      "label": "Çakışma Gelen Kutusu",
+      "summary": "Satır 42 — Birleştirme çakışması",
+      "severity": "Yüksek",
+      "lines": ["L-42", "L-43"],
+      "actionLabel": "Otomatik Birleştir"
+    },
+    "versions": [
+      {
+        "id": "v1.0.0",
+        "label": "v1.0.0 — Şu anki",
+        "desc": "İlk sürüm.",
+        "author": "Sistem",
+        "time": "Az önce",
+        "current": true
+      }
+    ]
+  },
+  "stitchScreens": {
+    "enabled": true,
+    "routes": [
+      { "match": "Workspace", "route": "frontend/src/app/dashboard/page.tsx" },
+      { "match": "Metrics", "route": "frontend/src/app/dashboard/cycle-heatmap/page.tsx" },
+      { "match": "Settings", "route": "frontend/src/app/dashboard/settings/page.tsx" },
+      { "match": "Landing", "route": "frontend/src/app/page.tsx" }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "displayName": "ClipForge",
+  "projectSlug": "clipforge",
+  "tokenKey": "clipforge_token",
+  "userKey": "clipforge_user",
+  "themeKey": "clipforge_theme",
+  "demoEmail": "demo@clipforge.com.tr",
+  "companyName": "Video İşbirliği A.Ş.",
+  "tagline": "Premium Akıl",
+  "meta": {
+    "title": "ClipForge — Yapay Zeka Destekli Klip Yönetimi",
+    "description": "İzleyici drop-off inbox, sahne bölüm blast radius ısı haritası ve embed cascade radarı — Loom kalitesinde Türkçe SaaS."
+  },
+  "landing": {
+    "heroBadge": "Loom kalitesinde, klip intelligence ile",
+    "heroTitlePrefix": "Ekipler için",
+    "heroHighlight": "conflict-aware",
+    "heroTitleSuffix": "klip yönetimi",
+    "heroSubtitle": "ClipForge; izleyici drop-off inbox, sahne bölüm blast radius ısı haritası, embed cascade radarı ve versiyon denetçisini tek bir premium platformda birleştirir. Tam Türkçe arayüz, gerçek zamanlı işbirliği.",
+    "featuresSectionTitle": "Loom'u aşan üç mutasyon",
+    "featuresSectionSubtitle": "Built-in izleyici drop-off intelligence, permission dependency analysis ve template embed cascade — harici eklenti veya manuel sync gerektirmez.",
+    "features": [
+      {
+        "icon": "Sparkles",
+        "title": "İzleyici Drop-off Inbox",
+        "desc": "Eşzamanlı düzenlemeleri otomatik kümeleme ile önceliklendirin — çakışma fişleri, önem derecesi rozetleri ve otomatik birleştirme önerileri."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Sahne Bölüm Blast Radius",
+        "desc": "Klip × bölüm ısı haritası, etki alanı severity renkleri ve işbirliği etki puanı — regression riskini anında görün."
+      },
+      {
+        "icon": "GitBranch",
+        "title": "Embed Cascade Radarı",
+        "desc": "İzin değişikliklerinde bağlı kliplerde downstream etki önizlemesi — paylaşım kırılmalarını önleyin."
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "Versiyon Denetçisi",
+        "desc": "Geçmiş, karşılaştır ve geri al sekmeleriyle tam sürüm kontrolü — her değişiklik kim tarafından, ne zaman."
+      },
+      {
+        "icon": "Shield",
+        "title": "KVKK Uyumlu Denetim İzi",
+        "desc": "Her klip değişikliği ve paylaşım kararı kayıt altında — kurumsal compliance hazır."
+      },
+      {
+        "icon": "Layers",
+        "title": "Gerçek Zamanlı İşbirliği",
+        "desc": "Presence göstergeleri, cyan-threaded düzenleme izleri ve AI destekli analiz — tek workspace'te."
+      }
+    ],
+    "plans": [
+      {
+        "name": "Başlangıç",
+        "price": "Ücretsiz",
+        "period": "",
+        "highlight": false,
+        "items": ["5 klip", "3 kullanıcı", "Temel çakışma inbox", "Sürüm geçmişi", "E-posta desteği"]
+      },
+      {
+        "name": "Pro",
+        "price": "₺549",
+        "period": "/ay",
+        "highlight": true,
+        "items": ["Sınırsız klip", "25 kullanıcı", "Blast radius heatmap", "Otomatik birleştirme", "AI analiz kredileri", "Öncelikli destek"]
+      },
+      {
+        "name": "Kurumsal",
+        "price": "Özel",
+        "period": "",
+        "highlight": false,
+        "items": ["Sınırsız kullanıcı", "Cascade radar + SSO", "API anahtar matrisi", "Org analytics", "Webhook", "Özel hesap yöneticisi"]
+      }
+    ]
+  },
+  "sidebar": {
+    "primaryAction": "Yeni Doküman",
+    "navItems": [
+      { "href": "/dashboard", "label": "Kliplerim", "icon": "FileText", "badge": false },
+      { "href": "/dashboard/triage", "label": "Çalışma Gelen Kutusu", "icon": "Inbox", "badge": true },
+      { "href": "/dashboard/boards", "label": "Takım Klasörleri", "icon": "FolderOpen", "badge": false },
+      { "href": "/dashboard/issues", "label": "Arşiv", "icon": "Archive", "badge": false }
+    ],
+    "bottomItems": [
+      { "href": "/dashboard/settings", "label": "Ayarlar", "icon": "Settings" },
+      { "href": "/dashboard/team", "label": "Yardım", "icon": "HelpCircle" }
+    ]
+  },
+  "workspace": {
+    "documentTitle": "Yapay Zeka Destekli Klip Yönetimi Mimarisi",
+    "presenceText": "Ahmet Yılmaz düzenliyor…",
+    "paragraphs": [
+      "ClipForge, dağıtık ekiplerin klip yönetimini bir üst seviyeye taşıyan yapay zeka destekli bir platformdur. Gerçek zamanlı işbirliği, otomatik çakışma çözümleme ve sürüm denetimi tek bir çalışma alanında birleşir.",
+      "Platform mimarisi; CRDT tabanlı senkronizasyon katmanı, AI analiz motoru ve versiyon grafiği olmak üzere üç ana bileşenden oluşur. Her bileşen bağımsız ölçeklenebilir ve kurumsal deployment senaryolarına uyumludur.",
+      "Çakışma inbox modülü, eşzamanlı düzenlemeleri severity skoruna göre önceliklendirir. Blast radius heatmap ise yorum thread'lerinin klip genelindeki etkisini görselleştirir."
+    ],
+    "codeSnippet": "function resolveConflict(localState, remoteState) {\n  return mergeStrategies.auto(localState, remoteState);\n}",
+    "conflictInbox": {
+      "label": "Çakışma Gelen Kutusu",
+      "summary": "Satır 42 — Paragraf birleştirme çakışması",
+      "severity": "Yüksek",
+      "lines": ["L-42", "L-43"],
+      "actionLabel": "Otomatik Birleştir"
+    },
+    "versions": [
+      {
+        "id": "v2.4.1",
+        "label": "v2.4.1 — Şu anki",
+        "desc": "Yapay zeka analiz bölümü eklendi.",
+        "author": "Elif Yılmaz",
+        "time": "2 dakika önce",
+        "current": true
+      },
+      {
+        "id": "v2.4.0",
+        "label": "v2.4.0",
+        "desc": "Giriş paragrafı düzeltmeleri.",
+        "author": "Can Demir",
+        "time": "1 saat önce",
+        "current": false
+      },
+      {
+        "id": "v2.3.5",
+        "label": "v2.3.5",
+        "desc": "İlk taslak oluşturuldu.",
+        "author": "Sistem",
+        "time": "Dün 14:30",
+        "current": false
+      }
+    ]
+  },
+  "stitchScreens": {
+    "enabled": true,
+    "routes": [
+      { "match": "Workspace", "route": "frontend/src/app/dashboard/page.tsx" },
+      { "match": "Metrics", "route": "frontend/src/app/dashboard/cycle-heatmap/page.tsx" },
+      { "match": "Settings", "route": "frontend/src/app/dashboard/settings/page.tsx" },
+      { "match": "Landing", "route": "frontend/src/app/page.tsx" }
+    ]
+  }
+}

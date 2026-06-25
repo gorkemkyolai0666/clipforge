@@ -1,0 +1,13 @@
+{
+  "name": "clipforge",
+  "private": true,
+  "scripts": {
+    "provision": "tsx scripts/provision-all.ts",
+    "provision:github": "tsx scripts/create-repo.ts",
+    "provision:railway": "tsx scripts/provision-railway.ts",
+    "provision:vercel": "tsx scripts/provision-vercel.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0"
+  }
+}

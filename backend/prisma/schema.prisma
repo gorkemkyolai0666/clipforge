@@ -1,0 +1,278 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  admin
+  product_owner
+  developer
+  viewer
+}
+
+enum PlanTier {
+  starter
+  pro
+  enterprise
+}
+
+enum IssuePriority {
+  low
+  medium
+  high
+  critical
+}
+
+enum IssueStatus {
+  backlog
+  todo
+  in_progress
+  review
+  done
+}
+
+enum SprintStatus {
+  planning
+  active
+  completed
+}
+
+enum DependencyType {
+  blocks
+  blocked_by
+}
+
+enum CeremonyType {
+  standup
+  retrospective
+  planning
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      UserRole @default(developer)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  teamMemberships TeamMember[]
+  assignedIssues  Issue[]      @relation("IssueAssignee")
+  reportedIssues  Issue[]      @relation("IssueReporter")
+  comments        Comment[]
+  auditLogs       AuditLog[]
+}
+
+model Organization {
+  id               String   @id @default(uuid())
+  name             String
+  slug             String   @unique
+  address          String   @default("")
+  phone            String   @default("")
+  email            String   @default("")
+  planTier         PlanTier @default(pro)
+  maxBoards        Int      @default(10)
+  maxUsers         Int      @default(25)
+  aiCredits        Int      @default(100)
+  analyticsEnabled Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  boards      Board[]
+  teamMembers TeamMember[]
+  auditLogs   AuditLog[]
+  ceremonies  Ceremony[]
+  labels      Label[]
+  triageRules TriageRule[]
+}
+
+model TeamMember {
+  id             String       @id @default(uuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  userId         String
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role           UserRole     @default(developer)
+  joinedAt       DateTime     @default(now())
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@unique([organizationId, userId])
+}
+
+model Board {
+  id             String       @id @default(uuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  name           String
+  description    String       @default("")
+  isArchived     Boolean      @default(false)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  columns    Column[]
+  issues     Issue[]
+  sprints    Sprint[]
+  ceremonies Ceremony[]
+}
+
+model Column {
+  id        String   @id @default(uuid())
+  boardId   String
+  board     Board    @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  name      String
+  position  Int      @default(0)
+  wipLimit  Int?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  issues Issue[]
+}
+
+model Issue {
+  id          String        @id @default(uuid())
+  boardId     String
+  board       Board         @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  columnId    String?
+  column      Column?       @relation(fields: [columnId], references: [id], onDelete: SetNull)
+  title       String
+  description String        @default("")
+  priority    IssuePriority @default(medium)
+  status      IssueStatus   @default(backlog)
+  storyPoints Int?
+  assigneeId  String?
+  assignee    User?         @relation("IssueAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  reporterId  String?
+  reporter    User?         @relation("IssueReporter", fields: [reporterId], references: [id], onDelete: SetNull)
+  position    Int           @default(0)
+  dueDate     DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  sprintIssues SprintIssue[]
+  outgoingDeps Dependency[]  @relation("DependencySource")
+  incomingDeps Dependency[]  @relation("DependencyTarget")
+  issueLabels  IssueLabel[]
+  comments     Comment[]
+}
+
+model Sprint {
+  id        String       @id @default(uuid())
+  boardId   String
+  board     Board        @relation(fields: [boardId], references: [id], onDelete: Cascade)
+  name      String
+  goal      String       @default("")
+  status    SprintStatus @default(planning)
+  startDate DateTime?
+  endDate   DateTime?
+  velocity  Int?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  sprintIssues SprintIssue[]
+}
+
+model SprintIssue {
+  id       String   @id @default(uuid())
+  sprintId String
+  sprint   Sprint   @relation(fields: [sprintId], references: [id], onDelete: Cascade)
+  issueId  String
+  issue    Issue    @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  addedAt  DateTime @default(now())
+
+  @@unique([sprintId, issueId])
+}
+
+model Dependency {
+  id               String         @id @default(uuid())
+  issueId          String
+  issue            Issue          @relation("DependencySource", fields: [issueId], references: [id], onDelete: Cascade)
+  dependsOnIssueId String
+  dependsOnIssue   Issue          @relation("DependencyTarget", fields: [dependsOnIssueId], references: [id], onDelete: Cascade)
+  type             DependencyType
+  createdAt        DateTime       @default(now())
+
+  @@unique([issueId, dependsOnIssueId, type])
+}
+
+model AuditLog {
+  id             String       @id @default(uuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  userId         String?
+  user           User?        @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action         String
+  entityType     String
+  entityId       String
+  metadata       String       @default("{}")
+  createdAt      DateTime     @default(now())
+}
+
+model Ceremony {
+  id              String       @id @default(uuid())
+  organizationId  String
+  organization    Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  boardId         String?
+  board           Board?       @relation(fields: [boardId], references: [id], onDelete: SetNull)
+  type            CeremonyType
+  title           String       @default("")
+  scheduledAt     DateTime
+  durationMinutes Int          @default(30)
+  notes           String       @default("")
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+}
+
+model Label {
+  id             String       @id @default(uuid())
+  organizationId String
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  name           String
+  color          String       @default("#4f46e5")
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  issueLabels IssueLabel[]
+
+  @@unique([organizationId, name])
+}
+
+model IssueLabel {
+  id        String   @id @default(uuid())
+  issueId   String
+  issue     Issue    @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  labelId   String
+  label     Label    @relation(fields: [labelId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([issueId, labelId])
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  issueId   String
+  issue     Issue    @relation(fields: [issueId], references: [id], onDelete: Cascade)
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  body      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model TriageRule {
+  id             String         @id @default(uuid())
+  organizationId String
+  organization   Organization   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  name           String
+  labelPattern   String         @default("")
+  priority       IssuePriority?
+  assigneeId     String?
+  isActive       Boolean        @default(true)
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+}

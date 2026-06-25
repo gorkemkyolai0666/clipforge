@@ -1,0 +1,25 @@
+{
+  "screens": [
+    {
+      "title": "ClipForge Logo",
+      "slug": "clipforge-logo"
+    },
+    {
+      "title": "ClipForge Settings & Team",
+      "slug": "clipforge-settings-team"
+    },
+    {
+      "title": "ClipForge Workspace",
+      "slug": "clipforge-workspace"
+    },
+    {
+      "title": "ClipForge Metrics Dashboard",
+      "slug": "clipforge-metrics-dashboard"
+    }
+  ],
+  "routes": [
+    "frontend/src/app/dashboard/cycle-heatmap/page.tsx",
+    "frontend/src/app/dashboard/page.tsx",
+    "frontend/src/app/dashboard/settings/page.tsx"
+  ]
+}

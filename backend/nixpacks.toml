@@ -1,0 +1,12 @@
+[phases.setup]
+nixPkgs = ["nodejs_20", "npm-9_x"]
+
+[phases.install]
+cmds = ["npm install --legacy-peer-deps"]
+
+[phases.build]
+# Prisma generate komutuna şemanın yerini garanti etmek için açıkça parametre ekledik
+cmds = ["npx prisma generate --schema=./prisma/schema.prisma", "npm run build"]
+
+[start]
+cmd = "npm run deploy"
